@@ -67,58 +67,67 @@ export function Header() {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => {
-              const isActive = activeSection === item.href.substring(1);
-              return (
-                <button
-                  key={item.href}
-                  onClick={() => scrollToSection(item.href)}
-                  className={`px-4 py-2 rounded-lg transition-all duration-200 font-medium relative group ${
-                    isActive
-                      ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 shadow-sm"
-                      : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20"
-                  }`}
+          {/* Right Side - Navigation and Actions */}
+          <div className="flex items-center space-x-6">
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-1">
+              {navItems.map((item) => {
+                const isActive = activeSection === item.href.substring(1);
+                return (
+                  <button
+                    key={item.href}
+                    onClick={() => scrollToSection(item.href)}
+                    className={`px-4 py-2 rounded-lg transition-all duration-200 font-medium relative group ${
+                      isActive
+                        ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 shadow-sm"
+                        : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                    }`}
+                  >
+                    {item.label}
+                    <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-emerald-600 transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0 group-hover:w-full"
+                    }`}></div>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Actions */}
+            <div className="flex items-center space-x-2">
+              {/* Modern Theme Toggle */}
+              <div className="relative">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={toggleTheme}
+                  className="relative w-10 h-10 rounded-full bg-gradient-to-r from-blue-100 to-emerald-100 dark:from-blue-900/30 dark:to-emerald-900/30 hover:from-blue-200 hover:to-emerald-200 dark:hover:from-blue-800/40 dark:hover:to-emerald-800/40 border border-blue-200/50 dark:border-blue-700/50 transition-all duration-300 group shadow-lg hover:shadow-xl"
                 >
-                  {item.label}
-                  <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-emerald-600 transition-all duration-300 ${
-                    isActive ? "w-full" : "w-0 group-hover:w-full"
-                  }`}></div>
-                </button>
-              );
-            })}
-          </div>
+                  <div className="relative">
+                    {theme === "light" ? (
+                      <Moon className="h-4 w-4 text-blue-600 dark:text-blue-400 group-hover:rotate-12 transition-transform duration-300" />
+                    ) : (
+                      <Sun className="h-4 w-4 text-amber-500 group-hover:rotate-12 transition-transform duration-300" />
+                    )}
+                  </div>
+                  <span className="sr-only">Toggle theme</span>
+                </Button>
+              </div>
 
-          {/* Right Side Actions */}
-          <div className="flex items-center space-x-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200 group"
-            >
-              {theme === "light" ? (
-                <Moon className="h-5 w-5 group-hover:rotate-12 transition-transform duration-200" />
-              ) : (
-                <Sun className="h-5 w-5 group-hover:rotate-12 transition-transform duration-200" />
-              )}
-              <span className="sr-only">Toggle theme</span>
-            </Button>
-
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
-            >
-              {mobileMenuOpen ? (
-                <X className="h-5 w-5" />
-              ) : (
-                <Menu className="h-5 w-5" />
-              )}
-              <span className="sr-only">Toggle menu</span>
-            </Button>
+              {/* Mobile Menu Button */}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="md:hidden w-10 h-10 rounded-full bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 hover:from-gray-200 hover:to-gray-300 dark:hover:from-gray-700 dark:hover:to-gray-600 border border-gray-200 dark:border-gray-600 transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                {mobileMenuOpen ? (
+                  <X className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+                ) : (
+                  <Menu className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+                )}
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </div>
           </div>
         </div>
 
