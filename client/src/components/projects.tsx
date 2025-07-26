@@ -9,7 +9,7 @@ export function Projects() {
       id: 1,
       title: "AI-Powered Mental Health Tracker with Chatbot Support",
       description: "A comprehensive mobile application combining mood tracking, AI chatbot interaction, music therapy, and gamified mental health engagement. Features secure authentication, sentiment analysis, and emergency contact management for preventive mental healthcare.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       tech: ["React Native", "Flask", "NLP", "SQLite", "NativeBase"],
       icon: Brain,
       achievement: "MCA Final Year Project",
