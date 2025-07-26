@@ -1,4 +1,4 @@
-import { Pill, Film, Trophy, Code } from "lucide-react";
+import { Brain, Heart, Trophy, Code, Smartphone } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -7,25 +7,39 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "MedBuddy – Smart Drug Dispenser",
-      description: "A medication management app that won 1st place at Innothon by LPU. Built with a team to improve healthcare access using AI-powered recommendations and automated dispensing.",
-      image: "https://pixabay.com/get/gd58b6e42478b059427d9150b74bead8462a63d7f2f2a560b5f4f8070b26ada4dcb6da7ddd6df4524bf55c3ac6988011f51517a4e92f9708beabb713d8cdea90e_1280.jpg",
-      tech: ["Python", "Mobile Tech", "ML"],
-      icon: Pill,
-      achievement: "1st Place Winner",
+      title: "AI-Powered Mental Health Tracker with Chatbot Support",
+      description: "A comprehensive mobile application combining mood tracking, AI chatbot interaction, music therapy, and gamified mental health engagement. Features secure authentication, sentiment analysis, and emergency contact management for preventive mental healthcare.",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      tech: ["React Native", "Flask", "NLP", "SQLite", "NativeBase"],
+      icon: Brain,
+      achievement: "MCA Final Year Project",
       achievementIcon: Trophy,
-      color: "emerald"
+      color: "emerald",
+      features: ["AI Chatbot", "Mood Tracking", "Music Therapy", "Honor Score System"]
     },
     {
       id: 2,
+      title: "MedBuddy – Smart Drug Dispenser",
+      description: "A medication management app that won 1st place at Innothon by LPU. Built with a team to improve healthcare access using AI-powered recommendations and automated dispensing.",
+      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      tech: ["Python", "Mobile Tech", "ML", "IoT"],
+      icon: Heart,
+      achievement: "1st Place Winner",
+      achievementIcon: Trophy,
+      color: "blue",
+      features: ["AI Recommendations", "Automated Dispensing", "Healthcare Access"]
+    },
+    {
+      id: 3,
       title: "Movie Recommendation System",
       description: "Built a recommendation engine using Python and ML libraries to suggest movies based on user preferences, viewing history, and collaborative filtering algorithms.",
-      image: "https://pixabay.com/get/g5d178154beec311b03bbd9f623da33a1fc35c7613642acfb1195c63c41d6e7d7f43192f6136fe1d4e9af608fa435bc9b2c5cabdc1da803673316bdd6c7ecd949_1280.jpg",
-      tech: ["Pandas", "scikit-learn", "Matplotlib"],
-      icon: Film,
+      image: "https://images.unsplash.com/photo-1489599735188-14aeb3b5d1b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      tech: ["Python", "Pandas", "scikit-learn", "Matplotlib"],
+      icon: Smartphone,
       achievement: "Machine Learning",
       achievementIcon: Code,
-      color: "purple"
+      color: "purple",
+      features: ["Collaborative Filtering", "User Preferences", "Data Analysis"]
     },
   ];
 
@@ -35,10 +49,41 @@ export function Projects() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16">Featured Projects</h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => {
               const IconComponent = project.icon;
               const AchievementIcon = project.achievementIcon;
+              
+              const getColorClasses = (color: string) => {
+                switch (color) {
+                  case 'emerald':
+                    return {
+                      icon: 'text-emerald-600',
+                      badge: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300',
+                      achievement: 'text-emerald-600'
+                    };
+                  case 'blue':
+                    return {
+                      icon: 'text-blue-600',
+                      badge: 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300',
+                      achievement: 'text-blue-600'
+                    };
+                  case 'purple':
+                    return {
+                      icon: 'text-purple-600',
+                      badge: 'bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300',
+                      achievement: 'text-purple-600'
+                    };
+                  default:
+                    return {
+                      icon: 'text-gray-600',
+                      badge: 'bg-gray-100 dark:bg-gray-900/30 text-gray-800 dark:text-gray-300',
+                      achievement: 'text-gray-600'
+                    };
+                }
+              };
+
+              const colors = getColorClasses(project.color);
               
               return (
                 <Card key={project.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover-lift">
@@ -50,36 +95,51 @@ export function Projects() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <p className="text-sm">
-                        {project.id === 1 ? "Healthcare AI Solution" : "AI-Powered Recommendations"}
+                      <p className="text-sm font-medium">
+                        {project.id === 1 ? "Mental Health AI" : project.id === 2 ? "Healthcare Innovation" : "ML Recommendation Engine"}
                       </p>
                     </div>
                   </div>
                   
                   <CardContent className="p-6">
                     <CardHeader className="p-0 mb-4">
-                      <div className="flex items-center gap-3">
-                        <IconComponent className={`h-8 w-8 ${project.color === 'emerald' ? 'text-emerald-600' : 'text-purple-600'}`} />
-                        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                          {project.title}
-                        </h3>
+                      <div className="flex items-start gap-3">
+                        <IconComponent className={`h-8 w-8 ${colors.icon} mt-1`} />
+                        <div className="flex-1">
+                          <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 leading-tight">
+                            {project.title}
+                          </h3>
+                        </div>
                       </div>
                     </CardHeader>
                     
-                    <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                    <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed text-sm">
                       {project.description}
                     </p>
+
+                    {project.features && (
+                      <div className="mb-4">
+                        <h4 className="text-xs font-semibold text-gray-600 dark:text-gray-400 mb-2">Key Features:</h4>
+                        <div className="flex flex-wrap gap-1">
+                          {project.features.map((feature, index) => (
+                            <Badge 
+                              key={index} 
+                              variant="outline" 
+                              className="text-xs py-0 px-2"
+                            >
+                              {feature}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                     
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.map((tech, index) => (
                         <Badge 
                           key={index} 
                           variant="secondary" 
-                          className={`${
-                            project.color === 'emerald' 
-                              ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300' 
-                              : 'bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300'
-                          }`}
+                          className={`text-xs ${colors.badge}`}
                         >
                           {tech}
                         </Badge>
@@ -87,9 +147,7 @@ export function Projects() {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <div className={`flex items-center gap-2 ${
-                        project.color === 'emerald' ? 'text-emerald-600' : 'text-gray-500 dark:text-gray-400'
-                      }`}>
+                      <div className={`flex items-center gap-2 ${colors.achievement}`}>
                         <AchievementIcon className="h-4 w-4" />
                         <span className="text-sm font-medium">{project.achievement}</span>
                       </div>
