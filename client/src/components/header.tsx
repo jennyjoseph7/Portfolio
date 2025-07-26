@@ -7,6 +7,7 @@ export function Header() {
   const { theme, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
     { href: "#home", label: "Home" },
@@ -28,6 +29,18 @@ export function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      
+      // Determine active section based on scroll position
+      const sections = navItems.map(item => item.href.substring(1));
+      const scrollPosition = window.scrollY + 100;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i]);
+          break;
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,8 +50,8 @@ export function Header() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-lg border-b border-gray-200/50 dark:border-gray-800/50" 
-        : "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200/30 dark:border-gray-800/30"
+        ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-xl border-b border-gray-200/60 dark:border-gray-800/60" 
+        : "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md border-b border-gray-200/40 dark:border-gray-800/40"
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -56,16 +69,25 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <button
-                key={item.href}
-                onClick={() => scrollToSection(item.href)}
-                className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-all duration-200 font-medium relative group"
-              >
-                {item.label}
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-emerald-600 group-hover:w-full transition-all duration-300"></div>
-              </button>
-            ))}
+            {navItems.map((item) => {
+              const isActive = activeSection === item.href.substring(1);
+              return (
+                <button
+                  key={item.href}
+                  onClick={() => scrollToSection(item.href)}
+                  className={`px-4 py-2 rounded-lg transition-all duration-200 font-medium relative group ${
+                    isActive
+                      ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 shadow-sm"
+                      : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                  }`}
+                >
+                  {item.label}
+                  <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-emerald-600 transition-all duration-300 ${
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  }`}></div>
+                </button>
+              );
+            })}
           </div>
 
           {/* Right Side Actions */}
@@ -102,18 +124,29 @@ export function Header() {
 
         {/* Enhanced Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-6 pb-6 border-t border-gray-200/50 dark:border-gray-800/50">
+          <div className="md:hidden mt-6 pb-6 border-t border-gray-200/50 dark:border-gray-800/50 animate-in slide-in-from-top-2 duration-300">
             <div className="flex flex-col space-y-2 pt-6">
-              {navItems.map((item, index) => (
-                <button
-                  key={item.href}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-left px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-all duration-200 font-medium transform hover:translate-x-2"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  {item.label}
-                </button>
-              ))}
+              {navItems.map((item, index) => {
+                const isActive = activeSection === item.href.substring(1);
+                return (
+                  <button
+                    key={item.href}
+                    onClick={() => scrollToSection(item.href)}
+                    className={`text-left px-4 py-3 rounded-lg transition-all duration-200 font-medium transform hover:translate-x-2 ${
+                      isActive
+                        ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 shadow-sm border-l-4 border-blue-600"
+                        : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                    }`}
+                    style={{ 
+                      animationDelay: `${index * 50}ms`,
+                      animationFillMode: 'both',
+                      animation: `slideInLeft 0.3s ease-out ${index * 50}ms`
+                    }}
+                  >
+                    {item.label}
+                  </button>
+                );
+              })}
             </div>
           </div>
         )}
