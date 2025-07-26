@@ -94,23 +94,43 @@ export function Header() {
 
             {/* Actions */}
             <div className="flex items-center space-x-2">
-              {/* Modern Theme Toggle */}
+              {/* Modern Sliding Theme Toggle */}
               <div className="relative">
-                <Button
-                  variant="ghost"
-                  size="icon"
+                <button
                   onClick={toggleTheme}
-                  className="relative w-10 h-10 rounded-full bg-gradient-to-r from-blue-100 to-emerald-100 dark:from-blue-900/30 dark:to-emerald-900/30 hover:from-blue-200 hover:to-emerald-200 dark:hover:from-blue-800/40 dark:hover:to-emerald-800/40 border border-blue-200/50 dark:border-blue-700/50 transition-all duration-300 group shadow-lg hover:shadow-xl"
+                  className={`relative w-16 h-8 rounded-full p-1 transition-all duration-300 shadow-lg hover:shadow-xl border ${
+                    theme === "light"
+                      ? "bg-gradient-to-r from-blue-100 to-blue-200 border-blue-200 hover:from-blue-200 hover:to-blue-300"
+                      : "bg-gradient-to-r from-gray-700 to-gray-800 border-gray-600 hover:from-gray-600 hover:to-gray-700"
+                  }`}
                 >
-                  <div className="relative">
+                  {/* Sliding Circle */}
+                  <div
+                    className={`absolute top-1 w-6 h-6 rounded-full shadow-md transition-all duration-300 flex items-center justify-center ${
+                      theme === "light"
+                        ? "left-1 bg-gradient-to-r from-amber-400 to-yellow-500"
+                        : "left-9 bg-gradient-to-r from-blue-500 to-indigo-600"
+                    }`}
+                  >
                     {theme === "light" ? (
-                      <Moon className="h-4 w-4 text-blue-600 dark:text-blue-400 group-hover:rotate-12 transition-transform duration-300" />
+                      <Sun className="h-3 w-3 text-white" />
                     ) : (
-                      <Sun className="h-4 w-4 text-amber-500 group-hover:rotate-12 transition-transform duration-300" />
+                      <Moon className="h-3 w-3 text-white" />
                     )}
                   </div>
+                  
+                  {/* Background Icons */}
+                  <div className="absolute inset-0 flex items-center justify-between px-2">
+                    <Sun className={`h-3 w-3 transition-opacity duration-300 ${
+                      theme === "light" ? "opacity-0" : "opacity-40 text-gray-400"
+                    }`} />
+                    <Moon className={`h-3 w-3 transition-opacity duration-300 ${
+                      theme === "light" ? "opacity-40 text-blue-600" : "opacity-0"
+                    }`} />
+                  </div>
+                  
                   <span className="sr-only">Toggle theme</span>
-                </Button>
+                </button>
               </div>
 
               {/* Mobile Menu Button */}
