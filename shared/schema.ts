@@ -7,6 +7,7 @@ export const contacts = pgTable("contacts", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   name: text("name").notNull(),
   email: text("email").notNull(),
+  subject: text("subject").notNull(),
   message: text("message").notNull(),
   createdAt: timestamp("created_at").defaultNow(),
 });
@@ -14,6 +15,7 @@ export const contacts = pgTable("contacts", {
 export const insertContactSchema = createInsertSchema(contacts).pick({
   name: true,
   email: true,
+  subject: true,
   message: true,
 });
 
