@@ -8,7 +8,6 @@ import { Projects } from "@/components/projects";
 import { Achievements } from "@/components/achievements";
 import { Certifications } from "@/components/certifications";
 import { Education } from "@/components/education";
-import { Testimonials } from "@/components/testimonials";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
@@ -26,7 +25,6 @@ export default function Home() {
         <Achievements />
         <Certifications />
         <Education />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />
