@@ -1,0 +1,124 @@
+You're a website generator or designer building a clean, modern portfolio site for Jenny Joseph K, a Master of Computer Applications student focused on AI, DevOps, and Ethical Hacking. Build a complete personal portfolio site with the following sections:
+
+✨ Style & Tone
+Professional yet friendly
+
+No generic tech jargon
+
+Confident, simple language
+
+Responsive design
+
+Dark mode optional
+
+Include animations for hover and transitions
+
+Use a modern, clean font like Inter or Roboto
+
+🧾 Page Structure:
+1. Landing Page / Home
+Hero section with name:
+Jenny Joseph K
+
+"Aspiring AI & DevOps Engineer | Ethical Hacker | Tech Explorer"
+
+Short intro paragraph:
+
+I'm a curious builder and problem-solver currently pursuing my Master’s in Computer Applications. I specialize in artificial intelligence, DevOps, and ethical hacking. I enjoy turning complex problems into clean solutions and building tools that make life easier.
+
+Buttons:
+
+[View Resume] (PDF upload/download)
+
+[GitHub] (https://github.com/jennyjoseph7)
+
+[LinkedIn] (https://www.linkedin.com/in/jenny-joseph-k-b6a50a230)
+
+2. About Me
+A detailed section describing Jenny’s journey from a BCA graduate to a Master's student in AI. Emphasize her adaptability, hands-on experience with real-world tools (like TensorFlow, Kali Linux, Xcode), and her motivation to build systems that solve real problems.
+
+Include soft skills:
+
+Leadership
+
+Communication
+
+Problem-solving
+
+Project Management
+
+Also mention that Jenny is looking for DevOps or AI-based internships.
+
+3. Skills
+Break this into categories with icons:
+
+Languages: Java, Python, Swift, Linux
+
+Frameworks: HTML, CSS
+
+Tools: Kali Linux, Xcode, VS Code
+
+ML Tools: TensorFlow, PyTorch, scikit-learn
+
+Soft Skills: Teamwork, Adaptability, Communication, Leadership
+
+4. Projects (Cards layout with hover effect)
+Each card should include:
+
+Project Title
+
+Short description
+
+Stack used
+
+Achievements (if any)
+
+Example:
+
+💊 MedBuddy – Smart Drug Dispenser
+
+A medication management app that won 1st place at Innothon by LPU. Built with a team to improve healthcare access using AI.
+Tools: Python, Mobile Tech, ML
+
+🎬 Movie Recommendation System
+
+Built a recommendation engine using Python and ML libraries to suggest movies based on user preferences.
+Tools: Pandas, scikit-learn, Matplotlib
+
+5. Certifications
+Bullet list or certificate card layout:
+
+Complete Ethical Hacking Bootcamp using Kali Linux (Udemy)
+
+Python, Data Science and Machine Learning (CipherSchools)
+
+6. Education
+Simple timeline layout:
+
+Master of Computer Applications
+Lovely Professional University, Punjab – Aug 2023 – 2025 (CGPA: 6.63)
+
+Bachelor of Computer Application
+Acharya Institute, Bangalore – 2020 – 2023 (76.5%)
+
+12th & 10th
+Kendriya Vidyalaya Rail Wheel Factory, Bangalore (2017 – 2019)
+
+7. Contact
+Simple form (Name, Email, Message)
+Include direct email link: jennyjosephkjs7@gmail.com
+Show phone number (optional): +91-9035937158
+
+8. Footer
+Copyright © Jenny Joseph K
+
+GitHub, LinkedIn, Email icons
+
+⚙️ Optional Add-ons
+Light/Dark theme toggle
+
+Resume PDF viewer
+
+Skills progress bars
+
+Blog (if she wants to write tech articles)
