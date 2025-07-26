@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Code, Layers, Wrench, Brain, Heart } from "lucide-react";
+import { Code, Layers, Wrench, Brain, Heart, Smartphone } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -7,21 +7,94 @@ import { Progress } from "@/components/ui/progress";
 export function Skills() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const languageSkills = [
-    { name: "Java", level: 85 },
-    { name: "Python", level: 90 },
-    { name: "Swift", level: 75 },
-    { name: "Linux", level: 80 },
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      icon: Code,
+      color: "blue",
+      skills: [
+        { name: "Python", level: 90 },
+        { name: "Java", level: 85 },
+        { name: "Swift", level: 75 },
+        { name: "JavaScript", level: 80 },
+      ]
+    },
+    {
+      title: "Web & Mobile",
+      icon: Smartphone,
+      color: "emerald",
+      skills: [
+        { name: "React Native", level: 85 },
+        { name: "HTML/CSS", level: 95 },
+        { name: "Flask", level: 80 },
+        { name: "Node.js", level: 75 },
+      ]
+    },
+    {
+      title: "AI & Machine Learning",
+      icon: Brain,
+      color: "purple",
+      skills: [
+        { name: "TensorFlow", level: 85 },
+        { name: "PyTorch", level: 80 },
+        { name: "scikit-learn", level: 88 },
+        { name: "NLP", level: 75 },
+      ]
+    },
+    {
+      title: "Development Tools",
+      icon: Wrench,
+      color: "amber",
+      tools: ["VS Code", "Xcode", "Git", "Linux", "Kali Linux"]
+    },
+    {
+      title: "Soft Skills",
+      icon: Heart,
+      color: "rose",
+      tools: ["Leadership", "Communication", "Problem-solving", "Teamwork", "Adaptability"]
+    }
   ];
 
-  const webSkills = [
-    { name: "HTML", level: 95 },
-    { name: "CSS", level: 90 },
-  ];
-
-  const tools = ["Kali Linux", "Xcode", "VS Code"];
-  const mlTools = ["TensorFlow", "PyTorch", "scikit-learn"];
-  const softSkills = ["Teamwork", "Adaptability", "Communication", "Leadership"];
+  const getColorClasses = (color: string) => {
+    const colors = {
+      blue: {
+        bg: "from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20",
+        border: "border-blue-200 dark:border-blue-800",
+        icon: "bg-blue-600",
+        text: "text-blue-800 dark:text-blue-300",
+        badge: "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300"
+      },
+      emerald: {
+        bg: "from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-emerald-800/20",
+        border: "border-emerald-200 dark:border-emerald-800",
+        icon: "bg-emerald-600",
+        text: "text-emerald-800 dark:text-emerald-300",
+        badge: "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300"
+      },
+      purple: {
+        bg: "from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20",
+        border: "border-purple-200 dark:border-purple-800",
+        icon: "bg-purple-600",
+        text: "text-purple-800 dark:text-purple-300",
+        badge: "bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300"
+      },
+      amber: {
+        bg: "from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20",
+        border: "border-amber-200 dark:border-amber-800",
+        icon: "bg-amber-600",
+        text: "text-amber-800 dark:text-amber-300",
+        badge: "bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300"
+      },
+      rose: {
+        bg: "from-rose-50 to-rose-100 dark:from-rose-900/20 dark:to-rose-800/20",
+        border: "border-rose-200 dark:border-rose-800",
+        icon: "bg-rose-600",
+        text: "text-rose-800 dark:text-rose-300",
+        badge: "bg-rose-100 dark:bg-rose-900/30 text-rose-800 dark:text-rose-300"
+      }
+    };
+    return colors[color as keyof typeof colors] || colors.blue;
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,110 +127,71 @@ export function Skills() {
   return (
     <section id="skills" className="py-20" ref={sectionRef}>
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">Skills & Technologies</h2>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Skills & Technologies</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              Comprehensive technical expertise spanning AI/ML, web development, mobile applications, 
+              and modern software engineering practices.
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Languages */}
-            <Card className="hover-lift transition-all duration-300 hover:shadow-xl">
-              <CardHeader className="text-center">
-                <Code className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Languages</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {languageSkills.map((skill, index) => (
-                    <div key={index} className="space-y-2">
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
-                        <span className="text-gray-500">{skill.level}%</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {skillCategories.map((category, index) => {
+              const IconComponent = category.icon;
+              const colors = getColorClasses(category.color);
+              
+              return (
+                <Card 
+                  key={index} 
+                  className={`bg-gradient-to-br ${colors.bg} border ${colors.border} hover:shadow-xl transition-all duration-300 hover-lift group ${
+                    category.tools ? 'flex flex-col' : ''
+                  }`}
+                >
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className={`${colors.icon} p-3 rounded-lg group-hover:scale-110 transition-transform duration-300`}>
+                        <IconComponent className="text-white h-6 w-6" />
                       </div>
-                      <Progress 
-                        value={skill.level} 
-                        className="h-2"
-                        data-progress={skill.level}
-                      />
+                      <CardTitle className={`text-lg ${colors.text}`}>
+                        {category.title}
+                      </CardTitle>
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Web Technologies */}
-            <Card className="hover-lift transition-all duration-300 hover:shadow-xl">
-              <CardHeader className="text-center">
-                <Layers className="h-12 w-12 text-emerald-600 mx-auto mb-4" />
-                <CardTitle>Web Technologies</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {webSkills.map((skill, index) => (
-                    <div key={index} className="space-y-2">
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
-                        <span className="text-gray-500">{skill.level}%</span>
+                  </CardHeader>
+                  <CardContent className="pt-0 flex-1">
+                    {category.skills ? (
+                      <div className="space-y-4">
+                        {category.skills.map((skill, skillIndex) => (
+                          <div key={skillIndex} className="space-y-2">
+                            <div className="flex justify-between text-sm">
+                              <span className="font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
+                              <span className="text-gray-500 dark:text-gray-400">{skill.level}%</span>
+                            </div>
+                            <Progress 
+                              value={skill.level} 
+                              className="h-2"
+                              data-progress={skill.level}
+                            />
+                          </div>
+                        ))}
                       </div>
-                      <Progress 
-                        value={skill.level} 
-                        className="h-2"
-                        data-progress={skill.level}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Tools */}
-            <Card className="hover-lift transition-all duration-300 hover:shadow-xl">
-              <CardHeader className="text-center">
-                <Wrench className="h-12 w-12 text-amber-600 mx-auto mb-4" />
-                <CardTitle>Tools</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {tools.map((tool, index) => (
-                    <Badge key={index} variant="secondary" className="bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300">
-                      {tool}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* ML Tools */}
-            <Card className="hover-lift transition-all duration-300 hover:shadow-xl">
-              <CardHeader className="text-center">
-                <Brain className="h-12 w-12 text-purple-600 mx-auto mb-4" />
-                <CardTitle>ML Tools</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {mlTools.map((tool, index) => (
-                    <Badge key={index} variant="secondary" className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300">
-                      {tool}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Soft Skills */}
-            <Card className="hover-lift transition-all duration-300 hover:shadow-xl md:col-span-2 lg:col-span-1">
-              <CardHeader className="text-center">
-                <Heart className="h-12 w-12 text-rose-600 mx-auto mb-4" />
-                <CardTitle>Soft Skills</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {softSkills.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="bg-rose-100 dark:bg-rose-900/30 text-rose-800 dark:text-rose-300">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                    ) : (
+                      <div className="flex flex-wrap gap-2">
+                        {category.tools?.map((tool, toolIndex) => (
+                          <Badge 
+                            key={toolIndex} 
+                            variant="secondary" 
+                            className={`text-xs ${colors.badge} hover:scale-105 transition-transform duration-200`}
+                          >
+                            {tool}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </div>
