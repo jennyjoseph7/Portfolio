@@ -29,7 +29,7 @@ jobs:
       run: npm ci
       
     - name: Build the project
-      run: npm run build
+      run: npm run build && npm run postbuild
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
