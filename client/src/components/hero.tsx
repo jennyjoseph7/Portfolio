@@ -28,13 +28,13 @@ export function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4 font-medium animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-            Aspiring AI & DevOps Engineer | Ethical Hacker | Tech Explorer
+            AI Engineer | DevOps Enthusiast | Certified Professional | Problem Solver
           </p>
 
           <p className="text-lg text-gray-700 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-            I'm a curious builder and problem-solver currently pursuing my Master's in Computer Applications. 
-            I specialize in artificial intelligence, DevOps, and ethical hacking. I enjoy turning complex 
-            problems into clean solutions and building tools that make life easier.
+            Master's candidate with proven expertise in AI/ML, 10+ professional certifications, and hands-on experience 
+            building production-ready applications. Currently seeking DevOps or AI engineering opportunities to drive 
+            innovation and scalable solutions in dynamic tech environments.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
