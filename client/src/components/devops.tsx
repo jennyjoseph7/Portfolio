@@ -134,7 +134,7 @@ export function DevOps() {
               return (
                 <Card 
                   key={index} 
-                  className={`bg-gradient-to-br ${colors.bg} border ${colors.border} hover:shadow-xl transition-all duration-300 hover-lift`}
+                  className={`bg-gradient-to-br ${colors.bg} border-0 hover:shadow-xl transition-all duration-300 hover-lift`}
                 >
                   <CardHeader className="pb-3">
                     <div className="flex items-center gap-3 mb-3">
@@ -172,7 +172,7 @@ export function DevOps() {
           </div>
 
           {/* Programming Languages for DevOps */}
-          <Card className="bg-white dark:bg-gray-800 shadow-lg">
+          <Card className="bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 border-0 shadow-lg">
             <CardHeader>
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-indigo-600 p-3 rounded-lg">

@@ -144,7 +144,7 @@ export function Skills() {
               return (
                 <Card 
                   key={index} 
-                  className={`bg-gradient-to-br ${colors.bg} border ${colors.border} hover:shadow-xl transition-all duration-300 hover-lift group ${
+                  className={`bg-gradient-to-br ${colors.bg} border ${colors.border} hover:shadow-xl transition-all duration-300 hover-lift group border-0 ${
                     category.tools ? 'flex flex-col' : ''
                   }`}
                 >
