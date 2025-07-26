@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/Portfolio/" />
+    <script>
+      // For GitHub Pages SPA routing: redirect all 404s to index.html
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      var newUrl = '/Portfolio/' + (path.replace(/^\/Portfolio\//, '') || '') + search + hash;
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html> 
