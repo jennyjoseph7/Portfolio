@@ -1,7 +1,5 @@
 node_modules
-# Ignore everything in dist except for files needed for GitHub Pages
-!dist/
-!dist/**
+dist
 .DS_Store
 server/public
 vite.config.ts.*
