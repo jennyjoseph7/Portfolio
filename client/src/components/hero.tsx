@@ -31,7 +31,16 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp px-4" style={{ animationDelay: '0.6s' }}>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+            <Button 
+              size="lg" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/resume.pdf';
+                link.download = 'Jenny_Joseph_K_Resume.pdf';
+                link.click();
+              }}
+            >
               <Download className="mr-2 h-5 w-5" />
               View Resume
             </Button>
