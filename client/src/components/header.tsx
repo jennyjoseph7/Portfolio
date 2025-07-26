@@ -11,6 +11,7 @@ export function Header() {
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
+    { href: "#devops", label: "DevOps" },
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
   ];
