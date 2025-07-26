@@ -57,9 +57,9 @@ export function About() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-12">
+          <div className="grid lg:grid-cols-2 gap-20 items-center mb-12">
             {/* Profile Picture Section */}
-            <div className="flex justify-center lg:justify-end order-2 lg:order-1">
+            <div className="flex justify-center order-2 lg:order-1">
               <div className="relative group">
                 {/* Profile Picture with Modern Design */}
                 <div className="relative w-80 h-80 rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-gray-800 p-2">
