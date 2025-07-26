@@ -73,11 +73,6 @@ export function About() {
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-600/30 via-transparent to-emerald-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
-                
-                {/* Enhanced Decorative Elements */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full opacity-20 animate-pulse blur-sm"></div>
-                <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full opacity-30 animate-pulse blur-sm" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute top-10 -left-4 w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full opacity-25 animate-pulse blur-sm" style={{ animationDelay: '2s' }}></div>
               </div>
             </div>
 
