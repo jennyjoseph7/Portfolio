@@ -79,18 +79,68 @@ export function Education() {
           </div>
 
           <div className="relative">
-            {/* Enhanced Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 via-emerald-400 to-amber-400 rounded-full shadow-lg"></div>
+            {/* Enhanced Timeline line - Hidden on mobile */}
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 via-emerald-400 to-amber-400 rounded-full shadow-lg"></div>
 
-            <div className="space-y-16">
+            <div className="space-y-8 lg:space-y-16">
               {education.map((edu, index) => {
                 const colors = getColorClasses(edu.color);
                 const isLeft = edu.position === "left";
                 
                 return (
                   <div key={index} className="relative flex items-center group">
-                    {/* Left side content */}
-                    <div className={`w-1/2 ${isLeft ? "pr-12 text-right" : "pr-12"}`}>
+                    {/* Mobile-first single column layout */}
+                    <div className="w-full lg:hidden">
+                      <Card className={`bg-gradient-to-br ${colors.bg} border ${colors.border} hover:shadow-xl transition-all duration-300 hover-lift group/card`}>
+                        <CardContent className="p-6">
+                          <div className="flex items-center gap-3 mb-4">
+                            <div className={`${colors.timeline} p-3 rounded-xl group-hover/card:scale-110 transition-transform duration-300 shadow-lg`}>
+                              <GraduationCap className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                            </div>
+                            <div>
+                              <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-1">
+                                {edu.degree}
+                              </h3>
+                              <Badge variant="secondary" className={`text-xs ${colors.badge}`}>
+                                {edu.status}
+                              </Badge>
+                            </div>
+                          </div>
+                          
+                          <div className="space-y-3">
+                            <div className="flex items-center gap-2">
+                              <MapPin className="h-4 w-4 text-gray-500" />
+                              <span className={`${colors.institution} font-semibold text-sm sm:text-base`}>
+                                {edu.institution}
+                              </span>
+                            </div>
+                            
+                            <div className="flex items-center gap-2">
+                              <Calendar className="h-4 w-4 text-gray-500" />
+                              <span className="text-gray-600 dark:text-gray-400 text-sm">
+                                {edu.period}
+                              </span>
+                            </div>
+                            
+                            {edu.grade && (
+                              <div className="flex items-center gap-2">
+                                <Award className="h-4 w-4 text-yellow-500" />
+                                <span className="text-gray-700 dark:text-gray-300 font-medium text-sm">
+                                  {edu.grade}
+                                </span>
+                              </div>
+                            )}
+                            
+                            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mt-3">
+                              {edu.description}
+                            </p>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+
+                    {/* Desktop two-column layout */}
+                    <div className={`hidden lg:block w-1/2 ${isLeft ? "pr-12 text-right" : "pr-12"}`}>
                       {isLeft && (
                         <Card className={`bg-gradient-to-br ${colors.bg} border ${colors.border} hover:shadow-xl transition-all duration-300 hover-lift group/card`}>
                           <CardContent className="p-8">

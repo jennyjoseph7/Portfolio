@@ -57,12 +57,12 @@ export function About() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-20 items-center mb-12">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12">
             {/* Profile Picture Section */}
             <div className="flex justify-center order-2 lg:order-1">
               <div className="relative group">
                 {/* Profile Picture with Modern Design */}
-                <div className="relative w-80 h-80 rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-gray-800 p-2">
+                <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-gray-800 p-2">
                   <div className="w-full h-full rounded-2xl overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
@@ -102,21 +102,21 @@ export function About() {
           </div>
 
           {/* Highlights Grid */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12">
             {highlights.map((highlight, index) => {
               const IconComponent = highlight.icon;
               const colors = getColorClasses(highlight.color);
               
               return (
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift group">
-                  <CardContent className="p-6 text-center">
-                    <div className={`${colors.bg} w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                      <IconComponent className={`h-8 w-8 ${colors.icon}`} />
+                  <CardContent className="p-4 sm:p-6 text-center">
+                    <div className={`${colors.bg} w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                      <IconComponent className={`h-6 w-6 sm:h-8 sm:w-8 ${colors.icon}`} />
                     </div>
-                    <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                    <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2 text-sm sm:text-base">
                       {highlight.title}
                     </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                       {highlight.description}
                     </p>
                   </CardContent>

@@ -93,38 +93,38 @@ export function Header() {
             </div>
 
             {/* Actions */}
-            <div className="flex items-center space-x-2">
-              {/* Modern Sliding Theme Toggle */}
+            <div className="flex items-center space-x-3 sm:space-x-2">
+              {/* Modern Sliding Theme Toggle - Responsive */}
               <div className="relative">
                 <button
                   onClick={toggleTheme}
-                  className={`relative w-16 h-8 rounded-full p-1 transition-all duration-300 shadow-lg hover:shadow-xl border ${
+                  className={`relative w-14 h-7 sm:w-16 sm:h-8 rounded-full p-0.5 sm:p-1 transition-all duration-300 shadow-lg hover:shadow-xl border focus:outline-none focus:ring-2 focus:ring-blue-500/50 ${
                     theme === "light"
                       ? "bg-gradient-to-r from-blue-100 to-blue-200 border-blue-200 hover:from-blue-200 hover:to-blue-300"
                       : "bg-gradient-to-r from-gray-700 to-gray-800 border-gray-600 hover:from-gray-600 hover:to-gray-700"
                   }`}
                 >
-                  {/* Sliding Circle */}
+                  {/* Sliding Circle - Responsive */}
                   <div
-                    className={`absolute top-1 w-6 h-6 rounded-full shadow-md transition-all duration-300 flex items-center justify-center ${
+                    className={`absolute top-0.5 sm:top-1 w-5 h-5 sm:w-6 sm:h-6 rounded-full shadow-md transition-all duration-300 flex items-center justify-center ${
                       theme === "light"
-                        ? "left-1 bg-gradient-to-r from-amber-400 to-yellow-500"
-                        : "left-[2.25rem] bg-gradient-to-r from-blue-500 to-indigo-600"
+                        ? "left-0.5 sm:left-1 bg-gradient-to-r from-amber-400 to-yellow-500"
+                        : "left-8 sm:left-[2.25rem] bg-gradient-to-r from-blue-500 to-indigo-600"
                     }`}
                   >
                     {theme === "light" ? (
-                      <Sun className="h-3 w-3 text-white" />
+                      <Sun className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-white" />
                     ) : (
-                      <Moon className="h-3 w-3 text-white" />
+                      <Moon className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-white" />
                     )}
                   </div>
                   
-                  {/* Background Icons */}
-                  <div className="absolute inset-0 flex items-center justify-between px-2">
-                    <Sun className={`h-3 w-3 transition-opacity duration-300 ${
+                  {/* Background Icons - Responsive */}
+                  <div className="absolute inset-0 flex items-center justify-between px-1.5 sm:px-2">
+                    <Sun className={`h-2.5 w-2.5 sm:h-3 sm:w-3 transition-opacity duration-300 ${
                       theme === "light" ? "opacity-0" : "opacity-40 text-gray-400"
                     }`} />
-                    <Moon className={`h-3 w-3 transition-opacity duration-300 ${
+                    <Moon className={`h-2.5 w-2.5 sm:h-3 sm:w-3 transition-opacity duration-300 ${
                       theme === "light" ? "opacity-40 text-blue-600" : "opacity-0"
                     }`} />
                   </div>
