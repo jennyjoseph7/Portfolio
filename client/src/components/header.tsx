@@ -109,7 +109,7 @@ export function Header() {
                     className={`absolute top-1 w-6 h-6 rounded-full shadow-md transition-all duration-300 flex items-center justify-center ${
                       theme === "light"
                         ? "left-1 bg-gradient-to-r from-amber-400 to-yellow-500"
-                        : "left-9 bg-gradient-to-r from-blue-500 to-indigo-600"
+                        : "left-[2.25rem] bg-gradient-to-r from-blue-500 to-indigo-600"
                     }`}
                   >
                     {theme === "light" ? (
