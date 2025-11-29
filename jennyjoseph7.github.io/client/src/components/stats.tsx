@@ -5,7 +5,7 @@ export function Stats() {
   const stats = [
     {
       icon: Code,
-      number: "14",
+      number: "13",
       label: "Certifications",
       description: "",
       color: "blue"

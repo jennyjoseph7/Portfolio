@@ -58,7 +58,6 @@ export function Skills() {
       skills: [
         { name: "SQL", level: 80 },
         { name: "Data Analysis", level: 85 },
-        { name: "Data Modeling", level: 80 },
         { name: "Data Visualization", level: 80 },
         { name: "Machine Learning", level: 75 },
       ]
@@ -86,9 +85,7 @@ export function Skills() {
         "System Architecture",
         "SDLC",
         "Agile",
-        "API Development",
-        "Data Visualization Tools",
-        "Spreadsheet Skills"
+        "API Development"
       ]
     }
   ];

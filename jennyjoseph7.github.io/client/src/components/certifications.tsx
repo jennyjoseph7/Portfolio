@@ -79,21 +79,6 @@ export function Certifications() {
       providerColor: "text-indigo-700 dark:text-indigo-400",
       topicsColor: "text-indigo-600 dark:text-indigo-400"
     },
-    {
-      title: "Deloitte Australia Data Analytics Job Simulation",
-      provider: "Forage",
-      date: "NOV 2025",
-      credentialId: "zpY829xuy42v9X7ft",
-      topics: "Data Analysis • Data Modeling • Data Visualization Tools • Spreadsheet Skills",
-      description: "",
-      icon: BarChart3,
-      bgColor: "from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20",
-      borderColor: "border-teal-200 dark:border-teal-800",
-      iconBg: "bg-teal-600",
-      textColor: "text-teal-800 dark:text-teal-300",
-      providerColor: "text-teal-700 dark:text-teal-400",
-      topicsColor: "text-teal-600 dark:text-teal-400"
-    },
     // LPU Certifications
     {
       title: "Artificial Intelligence Analyst",

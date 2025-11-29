@@ -198,17 +198,6 @@ export function Timeline() {
       status: "completed"
     },
     {
-      id: "16a",
-      type: "certification",
-      title: "Deloitte Australia Data Analytics Job Simulation",
-      organization: "Forage",
-      period: "November 2025",
-      description: "",
-      achievements: ["Data Analysis", "Data Modeling", "Data Visualization Tools", "Spreadsheet Skills"],
-      color: "cyan",
-      status: "completed"
-    },
-    {
       id: "17",
       type: "certification",
       title: "Artificial Intelligence Analyst",
