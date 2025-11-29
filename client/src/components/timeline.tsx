@@ -26,8 +26,8 @@ export function Timeline() {
       title: "Master of Computer Applications (MCA)",
       organization: "Lovely Professional University",
       period: "January 2023 - December 2025",
-      description: "Pursuing Master's in Computer Applications with specialization in AI/ML. Currently in final year.",
-      achievements: ["AI/ML Specialization", "Advanced Programming", "Research Methodology"],
+      description: "",
+      achievements: [],
       color: "blue",
       status: "ongoing"
     },
@@ -35,10 +35,10 @@ export function Timeline() {
       id: "2",
       type: "experience",
       title: "Software Engineer",
-      organization: "Hewlett Packard Enterprise",
-      period: "November 2025",
-      description: "Software engineering role focusing on enterprise solutions and system development",
-      achievements: ["Enterprise Software", "System Development", "Team Collaboration"],
+      organization: "Hewlett Packard Enterprise · Internship",
+      period: "November 2025 - November 2025",
+      description: "",
+      achievements: [],
       color: "blue",
       status: "completed"
     },
@@ -46,10 +46,10 @@ export function Timeline() {
       id: "3",
       type: "experience",
       title: "Software Engineer",
-      organization: "JP Morgan Chase and Co",
-      period: "October 2025",
-      description: "Software engineering position in financial technology sector",
-      achievements: ["Financial Technology", "Software Engineering", "Enterprise Solutions"],
+      organization: "JP Morgan Chase & Co · Internship",
+      period: "October 2025 - October 2025",
+      description: "",
+      achievements: [],
       color: "emerald",
       status: "completed"
     },
@@ -57,10 +57,10 @@ export function Timeline() {
       id: "4",
       type: "experience",
       title: "Business Growth Analyst",
-      organization: "MSsquare Technologies, Vishakhapatnam",
+      organization: "MSsquare Technologies · Full-time",
       period: "November 2024 - January 2025",
-      description: "Analyzed business growth metrics and contributed to strategic decision-making processes",
-      achievements: ["Business Analysis", "Data Analytics", "Strategic Planning"],
+      description: "",
+      achievements: [],
       color: "purple",
       status: "completed"
     },
@@ -68,21 +68,21 @@ export function Timeline() {
       id: "5",
       type: "experience",
       title: "Intern",
-      organization: "Corizo, India",
+      organization: "Corizo · Internship",
       period: "February 2024 - March 2024",
-      description: "Internship focusing on practical application of AI and machine learning technologies",
-      achievements: ["AI/ML Skills", "Practical Application", "Industry Exposure"],
+      description: "",
+      achievements: [],
       color: "amber",
       status: "completed"
     },
     {
       id: "6",
       type: "project",
-      title: "MindWell - AI Mental Health Companion",
+      title: "Mindwell",
       organization: "MCA Final Year Project",
       period: "April 2025",
-      description: "An AI-first mental health companion for college students with emotion intelligence, crisis detection, daily journaling, and analytics. Built with React and Flask stack.",
-      achievements: ["AI Chatbot", "Emotion Intelligence", "Crisis Detection", "React & Flask"],
+      description: "",
+      achievements: [],
       color: "purple",
       status: "completed"
     },
@@ -90,21 +90,21 @@ export function Timeline() {
       id: "7",
       type: "project",
       title: "Forage Midas Project",
-      organization: "Forage Virtual Experience",
-      period: "August 2025",
-      description: "Data analytics solution applying skills to real-world business problems. Included data cleaning, exploratory analysis, dashboard creation, and strategic recommendations.",
-      achievements: ["Data Analytics", "Business Insights", "Dashboard Creation", "Strategic Recommendations"],
+      organization: "Associated with JP Morgan Chase & Co",
+      period: "August 2025 - September 2025",
+      description: "",
+      achievements: [],
       color: "indigo",
       status: "completed"
     },
     {
       id: "8",
       type: "project",
-      title: "Portfolio Website",
-      organization: "Personal Project",
-      period: "January 2024",
-      description: "A personal portfolio website showcasing projects, skills, and experiences. Built using modern web technologies and designed to highlight abilities in both frontend and backend development.",
-      achievements: ["Web Development", "Frontend & Backend", "Modern Technologies"],
+      title: "Portfolio",
+      organization: "Associated with Lovely Professional University",
+      period: "January 2024 - November 2025",
+      description: "",
+      achievements: [],
       color: "blue",
       status: "completed"
     },
@@ -114,8 +114,8 @@ export function Timeline() {
       title: "Bachelor of Computer Applications",
       organization: "Acharya Institute, Bangalore",
       period: "January 2020 - December 2023",
-      description: "Foundation in Computer Science, Programming, and System Design",
-      achievements: ["Programming Fundamentals", "System Design", "Database Management"],
+      description: "",
+      achievements: [],
       color: "blue",
       status: "completed"
     },
@@ -125,9 +125,20 @@ export function Timeline() {
       title: "12th & 10th Grade",
       organization: "Kendriya Vidyalaya",
       period: "January 2017 - December 2019",
-      description: "Strong foundation in Mathematics, Science, and Computer Science",
-      achievements: ["Computer Science", "Mathematics", "Science"],
+      description: "",
+      achievements: [],
       color: "amber",
+      status: "completed"
+    },
+    {
+      id: "11",
+      type: "experience",
+      title: "Volunteer",
+      organization: "Acharya - Arts and Culture",
+      period: "October 2022 - June 2023",
+      description: "",
+      achievements: [],
+      color: "purple",
       status: "completed"
     }
   ];
@@ -234,11 +245,7 @@ export function Timeline() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Professional Timeline</h2>
-            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto px-4">
-              A comprehensive journey through my education, experiences, projects, and achievements that showcase 
-              my growth in AI, DevOps, and software engineering.
-            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Timeline</h2>
           </div>
 
           {/* Filter Buttons */}
@@ -310,11 +317,13 @@ export function Timeline() {
                                 </span>
                               </div>
 
-                              <p className="text-sm text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                                {event.description}
-                              </p>
+                              {event.description && (
+                                <p className="text-sm text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                                  {event.description}
+                                </p>
+                              )}
 
-                              {event.achievements && (
+                              {event.achievements && event.achievements.length > 0 && (
                                 <div className="flex flex-wrap gap-2">
                                   {event.achievements.map((achievement, idx) => (
                                     <Badge key={idx} variant="secondary" className={`text-xs ${colors.badge}`}>
@@ -432,25 +441,6 @@ export function Timeline() {
             </div>
           </div>
 
-          {/* Summary Stats */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="text-center p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">2+</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Years of Study</div>
-            </div>
-            <div className="text-center p-6 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
-              <div className="text-2xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">3</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Major Projects</div>
-            </div>
-            <div className="text-center p-6 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-              <div className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-2">2+</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Certifications</div>
-            </div>
-            <div className="text-center p-6 bg-amber-50 dark:bg-amber-900/20 rounded-lg">
-              <div className="text-2xl font-bold text-amber-600 dark:text-amber-400 mb-2">1</div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">Internship</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

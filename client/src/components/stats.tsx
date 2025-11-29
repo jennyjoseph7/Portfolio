@@ -5,31 +5,24 @@ export function Stats() {
   const stats = [
     {
       icon: Code,
-      number: "3+",
-      label: "Years Coding",
-      description: "Consistent programming since 2020",
+      number: "13",
+      label: "Certifications",
+      description: "",
       color: "blue"
     },
     {
-      icon: Award,
-      number: "10+",
-      label: "Certifications",
-      description: "IBM and industry certifications",
+      icon: Users,
+      number: "3",
+      label: "Projects",
+      description: "",
       color: "emerald"
     },
     {
-      icon: Users,
-      number: "5+",
-      label: "Projects Completed",
-      description: "Full-stack applications built",
-      color: "purple"
-    },
-    {
       icon: Clock,
-      number: "1000+",
-      label: "Hours Learning",
-      description: "Dedicated to skill development",
-      color: "amber"
+      number: "4",
+      label: "Experiences",
+      description: "",
+      color: "purple"
     }
   ];
 
@@ -76,9 +69,11 @@ export function Stats() {
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
                       {stat.label}
                     </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      {stat.description}
-                    </p>
+                    {stat.description && (
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {stat.description}
+                      </p>
+                    )}
                   </CardContent>
                 </Card>
               );

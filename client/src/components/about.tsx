@@ -1,29 +1,8 @@
-import { MapPin, GraduationCap, Target, Sparkles } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export function About() {
-  const highlights = [
-    {
-      icon: GraduationCap,
-      title: "Education Journey",
-      description: "Master's in Computer Applications at LPU, Bachelor's from Acharya Institute",
-      color: "blue"
-    },
-    {
-      icon: Target,
-      title: "Specializations",
-      description: "AI/ML, DevOps, Ethical Hacking, Mobile Development",
-      color: "emerald"
-    },
-    {
-      icon: Sparkles,
-      title: "Core Strengths",
-      description: "Problem-solving, Continuous Learning, System Architecture",
-      color: "purple"
-    }
-  ];
-
   const getColorClasses = (color: string) => {
     const colors = {
       blue: {
@@ -51,10 +30,6 @@ export function About() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              A passionate technologist on a mission to bridge AI innovation with practical solutions, 
-              currently expanding into DevOps and cybersecurity domains.
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12">
@@ -80,16 +55,15 @@ export function About() {
             <div className="space-y-8 order-1 lg:order-2">
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I'm in my final year of MCA, starting in DevOps with a strong interest in how systems run behind the scenes. 
-                  What pulled me in wasn't just the tech but the way DevOps brings development and operations together to build 
-                  things that work and scale.
+                  I'm in my final year of MCA, starting in DevOps with a strong interest in how systems run behind the scenes. What pulled me in wasn't just the tech but the way DevOps brings development and operations together to build things that work and scale.
                 </p>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I've been learning by doing. Version control, CI/CD, containers, and cloud basics. These experiences taught me 
-                  the value of <span className="font-semibold text-emerald-600 dark:text-emerald-400">consistency, automation, and asking the right questions</span> when things go wrong. 
-                  I'm now looking for an internship or entry level role where I can keep learning, contribute to real projects, 
-                  and grow with a team that's serious about building good systems.
+                  I've been learning by doing. Version control, CI/CD, containers, and cloud basics. These experiences taught me the value of consistency, automation, and asking the right questions when things go wrong.
+                </p>
+
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  I'm now looking for an internship or entry level role where I can keep learning, contribute to real projects, and grow with a team that's serious about building good systems.
                 </p>
               </div>
 
@@ -101,56 +75,6 @@ export function About() {
             </div>
           </div>
 
-          {/* Highlights Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12">
-            {highlights.map((highlight, index) => {
-              const IconComponent = highlight.icon;
-              const colors = getColorClasses(highlight.color);
-              
-              return (
-                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift group">
-                  <CardContent className="p-4 sm:p-6 text-center">
-                    <div className={`${colors.bg} w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                      <IconComponent className={`h-6 w-6 sm:h-8 sm:w-8 ${colors.icon}`} />
-                    </div>
-                    <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2 text-sm sm:text-base">
-                      {highlight.title}
-                    </h4>
-                    <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                      {highlight.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-
-          {/* Currently Seeking Card */}
-          <Card className="bg-gradient-to-r from-blue-50 via-emerald-50 to-purple-50 dark:from-blue-900/20 dark:via-emerald-900/20 dark:to-purple-900/20 border-0 shadow-lg">
-            <CardContent className="p-8 text-center">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Target className="h-6 w-6 text-blue-600" />
-                <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                  Currently Seeking
-                </h4>
-              </div>
-              <p className="text-gray-700 dark:text-gray-300 text-lg mb-4">
-                An internship or entry level role where I can keep learning, contribute to real projects, 
-                and grow with a team that's serious about building good systems.
-              </p>
-              <div className="flex flex-wrap justify-center gap-2">
-                <Badge variant="secondary" className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300">
-                  DevOps Engineering
-                </Badge>
-                <Badge variant="secondary" className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300">
-                  AI/ML Development
-                </Badge>
-                <Badge variant="secondary" className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300">
-                  Software Engineering
-                </Badge>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

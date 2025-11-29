@@ -5,10 +5,10 @@ export function Certifications() {
   const certifications = [
     // Forage Job Simulations
     {
-      title: "AWS Solutions Architecture",
+      title: "AWS Solutions Architecture Job Simulation",
       provider: "Forage",
       date: "NOV 2025",
-      topics: "Job Simulation • AWS Architecture",
+      topics: "System Architecture • Technical Communication • Cloud Cost Management",
       icon: Building2,
       bgColor: "from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20",
       borderColor: "border-orange-200 dark:border-orange-800",
@@ -18,10 +18,10 @@ export function Certifications() {
       topicsColor: "text-orange-600 dark:text-orange-400"
     },
     {
-      title: "Accenture Developer & Technology",
+      title: "Accenture UK Developer and Technology Job Simulation",
       provider: "Forage",
       date: "NOV 2025",
-      topics: "Job Simulation • Software Development",
+      topics: "Process Mapping • Software Quality Assurance • Code Debugging • Agile Methodology",
       icon: Briefcase,
       bgColor: "from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20",
       borderColor: "border-blue-200 dark:border-blue-800",
@@ -31,10 +31,10 @@ export function Certifications() {
       topicsColor: "text-blue-600 dark:text-blue-400"
     },
     {
-      title: "Citi Technology Software Development",
+      title: "Citi Technology Software Development Job Simulation",
       provider: "Forage",
       date: "NOV 2025",
-      topics: "Job Simulation • Financial Tech",
+      topics: "API Development • Backend Development • Frontend Development • Java Programming",
       icon: Briefcase,
       bgColor: "from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20",
       borderColor: "border-green-200 dark:border-green-800",
@@ -44,10 +44,10 @@ export function Certifications() {
       topicsColor: "text-green-600 dark:text-green-400"
     },
     {
-      title: "HPE Software Engineering",
+      title: "Hewlett Packard Enterprise Software Engineering Job Simulation",
       provider: "Forage",
       date: "NOV 2025",
-      topics: "Job Simulation • Enterprise Software",
+      topics: "API Development • HPE GreenLake • Spring Boot • REST API Development",
       icon: Briefcase,
       bgColor: "from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20",
       borderColor: "border-purple-200 dark:border-purple-800",
@@ -57,10 +57,10 @@ export function Certifications() {
       topicsColor: "text-purple-600 dark:text-purple-400"
     },
     {
-      title: "JP Morgan Software Engineering",
+      title: "J.P. Morgan Software Engineering Job Simulation",
       provider: "Forage",
       date: "OCT 2025",
-      topics: "Job Simulation • FinTech",
+      topics: "Spring Boot • SQL Database • REST APIs",
       icon: Briefcase,
       bgColor: "from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20",
       borderColor: "border-indigo-200 dark:border-indigo-800",
@@ -139,7 +139,7 @@ export function Certifications() {
       title: "Data Visualization with Python",
       provider: "Lovely Professional University",
       date: "JAN 2025",
-      topics: "Python • Data Visualization",
+      topics: "Python (Programming Language) • Data Visualization",
       icon: BarChart3,
       bgColor: "from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20",
       borderColor: "border-amber-200 dark:border-amber-800",
@@ -152,7 +152,7 @@ export function Certifications() {
       title: "Machine Learning with Python",
       provider: "Lovely Professional University",
       date: "JAN 2025",
-      topics: "Machine Learning • Python",
+      topics: "Python (Programming Language) • Machine Learning",
       icon: Bot,
       bgColor: "from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20",
       borderColor: "border-emerald-200 dark:border-emerald-800",
@@ -163,10 +163,10 @@ export function Certifications() {
     },
     // Other Certifications
     {
-      title: "Complete Ethical Hacking Bootcamp",
+      title: "Complete Ethical Hacking Bootcamp 2022: Zero to Mastery",
       provider: "Udemy",
       date: "MAR 2021",
-      topics: "Ethical Hacking • Cybersecurity",
+      topics: "Python (Programming Language) • Kali Linux",
       icon: Shield,
       bgColor: "from-red-50 to-rose-50 dark:from-red-900/20 dark:to-rose-900/20",
       borderColor: "border-red-200 dark:border-red-800",

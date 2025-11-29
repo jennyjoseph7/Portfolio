@@ -12,7 +12,7 @@ export function Education() {
       color: "blue",
       position: "left",
       status: "Current",
-      description: "Specializing in AI, Machine Learning, and Advanced Software Engineering"
+      description: ""
     },
     {
       degree: "Bachelor of Computer Application",
@@ -22,7 +22,7 @@ export function Education() {
       color: "emerald",
       position: "right",
       status: "Completed",
-      description: "Foundation in Computer Science, Programming, and System Design"
+      description: ""
     },
     {
       degree: "12th & 10th Grade (Computer Science)",
@@ -32,7 +32,7 @@ export function Education() {
       color: "amber",
       position: "left",
       status: "Completed",
-      description: "Strong foundation in Mathematics and Science"
+      description: ""
     },
   ];
 
@@ -71,11 +71,7 @@ export function Education() {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Education Journey</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              A progressive academic path building expertise in computer applications, 
-              AI technologies, and software engineering fundamentals.
-            </p>
+            <h2 className="text-4xl font-bold mb-4">Education</h2>
           </div>
 
           <div className="relative">
@@ -131,9 +127,11 @@ export function Education() {
                               </div>
                             )}
                             
-                            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mt-3">
-                              {edu.description}
-                            </p>
+                            {edu.description && (
+                              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mt-3">
+                                {edu.description}
+                              </p>
+                            )}
                           </div>
                         </CardContent>
                       </Card>
