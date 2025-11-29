@@ -37,7 +37,7 @@ export function Hero() {
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/resume.pdf';
+                link.href = '/Resume.pdf';
                 link.download = 'Resume.pdf';
                 link.target = '_blank';
                 link.click();
