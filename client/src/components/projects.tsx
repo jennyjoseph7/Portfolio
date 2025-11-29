@@ -55,7 +55,7 @@ export function Projects() {
       achievement: "Personal Project",
       achievementIcon: Code,
       color: "amber",
-      githubUrl: "" // Add GitHub URL if available
+      githubUrl: "https://github.com/jennyjoseph7/friends_cafe"
     },
   ];
 
