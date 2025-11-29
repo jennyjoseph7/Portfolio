@@ -38,7 +38,7 @@ export function Hero() {
               asChild
             >
               <a 
-                href="/Resume.pdf" 
+                href="/resume.pdf" 
                 download="Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
