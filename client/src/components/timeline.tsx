@@ -98,6 +98,17 @@ export function Timeline() {
       status: "completed"
     },
     {
+      id: "7a",
+      type: "project",
+      title: "Friends Cafe",
+      organization: "Personal Project",
+      period: "April 2025 - July 2025",
+      description: "",
+      achievements: ["TypeScript", "JavaScript", "MySQL", "CSS", "Tailwind CSS", "Next.js"],
+      color: "amber",
+      status: "completed"
+    },
+    {
       id: "8",
       type: "project",
       title: "Portfolio",
@@ -106,17 +117,6 @@ export function Timeline() {
       description: "",
       achievements: [],
       color: "blue",
-      status: "completed"
-    },
-    {
-      id: "8a",
-      type: "project",
-      title: "Friends Cafe",
-      organization: "Personal Project",
-      period: "April 2025 - July 2025",
-      description: "",
-      achievements: ["TypeScript", "JavaScript", "MySQL", "CSS", "Tailwind CSS", "Next.js"],
-      color: "amber",
       status: "completed"
     },
     {
