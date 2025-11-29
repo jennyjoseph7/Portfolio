@@ -113,8 +113,8 @@ export function Timeline() {
       type: "project",
       title: "Friends Cafe",
       organization: "Personal Project",
-      period: "",
-      description: "Friends Cafe is structured as a complete online ordering system. Next.js with TypeScript powers the interface and routes, MySQL handles persistence, and a shared component library keeps the design consistent. A real time menu engine tracks inventory while category filters keep navigation simple. The cart recalculates totals, delivery rules, and item variations as the user edits. A direct OTP flow manages authentication and keeps sessions stable across history, tracking, and payments. An admin dashboard mirrors this clarity for menu updates, order checks, and trend views. The architecture stays predictable through REST style routes, tuned queries, reusable components, and custom hooks that isolate logic for carts and identity.",
+      period: "April 2025 - July 2025",
+      description: "",
       achievements: ["TypeScript", "JavaScript", "MySQL", "CSS", "Tailwind CSS", "Next.js"],
       color: "amber",
       status: "completed"
