@@ -31,14 +31,6 @@ export function Contact() {
     <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto px-4">
-              I'm always open to discussing new opportunities, innovative projects, or answering any questions you might have.
-              Let's connect and explore how we can work together.
-            </p>
-          </div>
-
           <div className="space-y-8">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">
