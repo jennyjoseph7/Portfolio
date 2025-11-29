@@ -1,4 +1,4 @@
-import { Brain, Heart, Trophy, Code, Smartphone, Github } from "lucide-react";
+import { Brain, Heart, Trophy, Code, Smartphone, Github, Coffee } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -42,7 +42,20 @@ export function Projects() {
       achievement: "April 2025",
       achievementIcon: Trophy,
       color: "emerald",
-      githubUrl: "https://github.com/jennyjoseph7/MindWell" // Add GitHub URL if available
+      githubUrl: "https://github.com/jennyjoseph7/MindWell"
+    },
+    {
+      id: 4,
+      title: "Friends Cafe",
+      description: "Friends Cafe is structured as a complete online ordering system. Next.js with TypeScript powers the interface and routes, MySQL handles persistence, and a shared component library keeps the design consistent. A real time menu engine tracks inventory while category filters keep navigation simple. The cart recalculates totals, delivery rules, and item variations as the user edits. A direct OTP flow manages authentication and keeps sessions stable across history, tracking, and payments. An admin dashboard mirrors this clarity for menu updates, order checks, and trend views. The architecture stays predictable through REST style routes, tuned queries, reusable components, and custom hooks that isolate logic for carts and identity.",
+      date: "",
+      image: "/friendscafe.jpg",
+      tech: ["TypeScript", "JavaScript", "MySQL", "CSS", "Tailwind CSS", "Next.js"],
+      icon: Coffee,
+      achievement: "Personal Project",
+      achievementIcon: Code,
+      color: "amber",
+      githubUrl: "" // Add GitHub URL if available
     },
   ];
 
@@ -52,7 +65,7 @@ export function Projects() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16">Featured Projects</h2>
 
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {projects.map((project) => {
               const IconComponent = project.icon;
               const AchievementIcon = project.achievementIcon;
@@ -76,6 +89,12 @@ export function Projects() {
                       icon: 'text-purple-600',
                       badge: 'bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300',
                       achievement: 'text-purple-600'
+                    };
+                  case 'amber':
+                    return {
+                      icon: 'text-amber-600',
+                      badge: 'bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300',
+                      achievement: 'text-amber-600'
                     };
                   default:
                     return {
