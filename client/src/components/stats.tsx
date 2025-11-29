@@ -12,7 +12,7 @@ export function Stats() {
     },
     {
       icon: Users,
-      number: "3",
+      number: "4",
       label: "Projects",
       description: "",
       color: "emerald"
