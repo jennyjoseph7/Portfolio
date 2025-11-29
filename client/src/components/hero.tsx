@@ -38,7 +38,8 @@ export function Hero() {
               onClick={() => {
                 const link = document.createElement('a');
                 link.href = '/resume.pdf';
-                link.download = 'Jenny_Joseph_K_Resume.pdf';
+                link.download = 'Resume.pdf';
+                link.target = '_blank';
                 link.click();
               }}
             >
