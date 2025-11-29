@@ -22,7 +22,7 @@ Choose your hosting option below:
 
 3. **Done!** Your site will be live at:
    ```
-   https://jennyjoseph7.github.io/Portfolio/
+   
    ```
    *(First deployment takes 2-3 minutes)*
 

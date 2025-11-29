@@ -10,6 +10,13 @@
       var search = window.location.search;
       var hash = window.location.hash;
       
+      // Check if we're accessing the root domain (no base path in URL)
+      // If path is just '/' or empty, redirect to base path
+      if (path === '/' && !window.location.pathname.includes(basePath)) {
+        window.location.replace(basePath + '/' + search + hash);
+        return;
+      }
+      
       // Remove base path if it exists in the current path
       if (path.startsWith(basePath + '/')) {
         path = path.substring(basePath.length);
@@ -25,6 +32,6 @@
     </script>
   </head>
   <body>
-    Redirecting...
+    <p>Redirecting to <a href="/Portfolio/">portfolio</a>...</p>
   </body>
 </html> 
