@@ -140,6 +140,150 @@ export function Timeline() {
       achievements: [],
       color: "purple",
       status: "completed"
+    },
+    // Certifications
+    {
+      id: "12",
+      type: "certification",
+      title: "AWS Solutions Architecture Job Simulation",
+      organization: "Forage",
+      period: "November 2025",
+      description: "Completed the AWS Solutions Architecture Job Simulation Program. Designed a scalable web app architecture with Elastic Beanstalk and EC2. Set up CodePipeline for automated deployments. Used an Application Load Balancer and Auto Scaling for high availability. Worked with RDS for reliable database operations and S3 for backups. Learned how to build resilient cloud systems within real world scenarios.",
+      achievements: ["System Architecture", "Technical Communication", "Cloud Cost Management"],
+      color: "orange",
+      status: "completed"
+    },
+    {
+      id: "13",
+      type: "certification",
+      title: "Accenture UK Developer and Technology Job Simulation",
+      organization: "Forage",
+      period: "November 2025",
+      description: "Completed Accenture Job Simulation with practical tasks in requirement analysis, software testing, and quality assurance. Applied SDLC, STLC, UML, and regression testing concepts to realistic project scenarios. Strengthened skills in test case design, documentation, process modelling, and defect understanding. Used tools and methods similar to JIRA style workflows and structured analysis to deliver clear outcomes.",
+      achievements: ["Process Mapping", "Software Quality Assurance", "Code Debugging", "Agile Methodology", "SDLC", "Software Testing"],
+      color: "blue",
+      status: "completed"
+    },
+    {
+      id: "14",
+      type: "certification",
+      title: "Citi Technology Software Development Job Simulation",
+      organization: "Forage",
+      period: "November 2025",
+      description: "Citi Technology Software Development. Built credit risk modeling proposal for loan workflows. Developed Java service to fetch live Dow Jones data. Created JavaFX dashboard for real time stock visualization. Gained experience in financial data pipelines and market monitoring.",
+      achievements: ["API Development", "Backend Development", "Frontend Development", "Java Programming", "Data Visualization", "Systems Design"],
+      color: "green",
+      status: "completed"
+    },
+    {
+      id: "15",
+      type: "certification",
+      title: "Hewlett Packard Enterprise Software Engineering Job Simulation",
+      organization: "Forage",
+      period: "November 2025",
+      description: "Completed Hewlett Packard Enterprise Software Engineering Virtual Experience. Built cloud ready backend features using modern Java and service oriented patterns. Applied version control, clean code practices, and modular design aligned with HPE engineering standards. Implemented data handling workflows and API driven components for scalable systems. Strengthened practical skills in enterprise level software development workflows.",
+      achievements: ["API Development", "HPE GreenLake", "Spring Boot", "REST API Development", "Unit Testing"],
+      color: "purple",
+      status: "completed"
+    },
+    {
+      id: "16",
+      type: "certification",
+      title: "J.P. Morgan Software Engineering Job Simulation",
+      organization: "Forage",
+      period: "October 2025",
+      description: "Completed J P Morgan Software Engineering Virtual Experience focused on end to end FinTech pipelines. Built Midas Core with Kafka streaming, Spring Boot services, and H2 with JPA. Developed REST APIs and integrated an external incentive calculation service. Implemented real time transaction validation, processing, and balance queries. Gained practical exposure to high volume fintech workflows.",
+      achievements: ["Spring Boot", "SQL Database", "REST APIs", "Kafka", "FinTech"],
+      color: "indigo",
+      status: "completed"
+    },
+    {
+      id: "17",
+      type: "certification",
+      title: "Artificial Intelligence Analyst",
+      organization: "Lovely Professional University",
+      period: "May 2025",
+      description: "",
+      achievements: ["AI Analysis", "Machine Learning"],
+      color: "purple",
+      status: "completed"
+    },
+    {
+      id: "18",
+      type: "certification",
+      title: "Accelerating Deep Learning with GPUs",
+      organization: "Lovely Professional University",
+      period: "April 2025",
+      description: "",
+      achievements: ["GPU Computing", "Deep Learning"],
+      color: "rose",
+      status: "completed"
+    },
+    {
+      id: "19",
+      type: "certification",
+      title: "Big Data Architecture",
+      organization: "Lovely Professional University",
+      period: "April 2025",
+      description: "",
+      achievements: ["Big Data", "Data Architecture"],
+      color: "indigo",
+      status: "completed"
+    },
+    {
+      id: "20",
+      type: "certification",
+      title: "Business Intelligence",
+      organization: "Lovely Professional University",
+      period: "January 2025",
+      description: "",
+      achievements: ["Business Intelligence", "Analytics"],
+      color: "blue",
+      status: "completed"
+    },
+    {
+      id: "21",
+      type: "certification",
+      title: "Data Science 101",
+      organization: "Lovely Professional University",
+      period: "January 2025",
+      description: "",
+      achievements: ["Data Science", "Statistics"],
+      color: "cyan",
+      status: "completed"
+    },
+    {
+      id: "22",
+      type: "certification",
+      title: "Data Visualization with Python",
+      organization: "Lovely Professional University",
+      period: "January 2025",
+      description: "",
+      achievements: ["Python", "Data Visualization"],
+      color: "amber",
+      status: "completed"
+    },
+    {
+      id: "23",
+      type: "certification",
+      title: "Machine Learning with Python",
+      organization: "Lovely Professional University",
+      period: "January 2025",
+      description: "",
+      achievements: ["Python", "Machine Learning"],
+      color: "emerald",
+      status: "completed"
+    },
+    {
+      id: "24",
+      type: "certification",
+      title: "Complete Ethical Hacking Bootcamp 2022: Zero to Mastery",
+      organization: "Udemy",
+      period: "March 2021",
+      description: "",
+      achievements: ["Python", "Kali Linux", "Ethical Hacking"],
+      color: "red",
+      status: "completed"
     }
   ];
 
@@ -222,6 +366,22 @@ export function Timeline() {
         icon: "bg-indigo-600",
         text: "text-indigo-600 dark:text-indigo-400",
         badge: "bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300"
+      },
+      orange: {
+        bg: "from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20",
+        border: "border-orange-200 dark:border-orange-700",
+        dot: "bg-orange-500",
+        icon: "bg-orange-600",
+        text: "text-orange-600 dark:text-orange-400",
+        badge: "bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300"
+      },
+      rose: {
+        bg: "from-rose-50 to-rose-100 dark:from-rose-900/20 dark:to-rose-800/20",
+        border: "border-rose-200 dark:border-rose-700",
+        dot: "bg-rose-500",
+        icon: "bg-rose-600",
+        text: "text-rose-600 dark:text-rose-400",
+        badge: "bg-rose-100 dark:bg-rose-900/30 text-rose-800 dark:text-rose-300"
       }
     };
     return colors[color as keyof typeof colors] || colors.blue;

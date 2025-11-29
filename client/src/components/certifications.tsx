@@ -8,7 +8,9 @@ export function Certifications() {
       title: "AWS Solutions Architecture Job Simulation",
       provider: "Forage",
       date: "NOV 2025",
+      credentialId: "gcxSCmZjiBX9J4iDB",
       topics: "System Architecture • Technical Communication • Cloud Cost Management",
+      description: "Completed the AWS Solutions Architecture Job Simulation Program. Designed a scalable web app architecture with Elastic Beanstalk and EC2. Set up CodePipeline for automated deployments. Used an Application Load Balancer and Auto Scaling for high availability. Worked with RDS for reliable database operations and S3 for backups. Learned how to build resilient cloud systems within real world scenarios.",
       icon: Building2,
       bgColor: "from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20",
       borderColor: "border-orange-200 dark:border-orange-800",
@@ -21,7 +23,9 @@ export function Certifications() {
       title: "Accenture UK Developer and Technology Job Simulation",
       provider: "Forage",
       date: "NOV 2025",
-      topics: "Process Mapping • Software Quality Assurance • Code Debugging • Agile Methodology",
+      credentialId: "aCPLzRwHp9ue5TTzZ",
+      topics: "Process Mapping • Software Quality Assurance • Code Debugging • Agile Methodology • Trend Analysis • Comparative Analysis • Software Development Life Cycle (SDLC) • Algorithmic Thinking • Waterfall Methodology • Software Testing",
+      description: "Completed Accenture Job Simulation with practical tasks in requirement analysis, software testing, and quality assurance. Applied SDLC, STLC, UML, and regression testing concepts to realistic project scenarios. Strengthened skills in test case design, documentation, process modelling, and defect understanding. Used tools and methods similar to JIRA style workflows and structured analysis to deliver clear outcomes.",
       icon: Briefcase,
       bgColor: "from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20",
       borderColor: "border-blue-200 dark:border-blue-800",
@@ -34,7 +38,9 @@ export function Certifications() {
       title: "Citi Technology Software Development Job Simulation",
       provider: "Forage",
       date: "NOV 2025",
-      topics: "API Development • Backend Development • Frontend Development • Java Programming",
+      credentialId: "g7mqmfQsYdGxTBEmC",
+      topics: "Process Mapping • API Development • Backend Development • Frontend Development • Risk Assessment • Java Programming • Data Visualization • Systems Design • Machine Learning",
+      description: "Citi Technology Software Development. Built credit risk modeling proposal for loan workflows. Developed Java service to fetch live Dow Jones data. Created JavaFX dashboard for real time stock visualization. Gained experience in financial data pipelines and market monitoring.",
       icon: Briefcase,
       bgColor: "from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20",
       borderColor: "border-green-200 dark:border-green-800",
@@ -47,7 +53,9 @@ export function Certifications() {
       title: "Hewlett Packard Enterprise Software Engineering Job Simulation",
       provider: "Forage",
       date: "NOV 2025",
-      topics: "API Development • HPE GreenLake • Spring Boot • REST API Development",
+      credentialId: "AumWaunaaxPnFjzKP",
+      topics: "API Development • HPE GreenLake • Spring Boot • Hypertext Transfer Protocol (HTTP) • Test Frameworks • REST API Development • Unit Testing",
+      description: "Completed Hewlett Packard Enterprise Software Engineering Virtual Experience. Built cloud ready backend features using modern Java and service oriented patterns. Applied version control, clean code practices, and modular design aligned with HPE engineering standards. Implemented data handling workflows and API driven components for scalable systems. Strengthened practical skills in enterprise level software development workflows.",
       icon: Briefcase,
       bgColor: "from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20",
       borderColor: "border-purple-200 dark:border-purple-800",
@@ -60,7 +68,9 @@ export function Certifications() {
       title: "J.P. Morgan Software Engineering Job Simulation",
       provider: "Forage",
       date: "OCT 2025",
+      credentialId: "DB2mjnppmW6SjLHrd",
       topics: "Spring Boot • SQL Database • REST APIs",
+      description: "Completed J P Morgan Software Engineering Virtual Experience focused on end to end FinTech pipelines. Built Midas Core with Kafka streaming, Spring Boot services, and H2 with JPA. Developed REST APIs and integrated an external incentive calculation service. Implemented real time transaction validation, processing, and balance queries. Gained practical exposure to high volume fintech workflows.",
       icon: Briefcase,
       bgColor: "from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20",
       borderColor: "border-indigo-200 dark:border-indigo-800",
@@ -74,7 +84,9 @@ export function Certifications() {
       title: "Artificial Intelligence Analyst",
       provider: "Lovely Professional University",
       date: "MAY 2025",
+      credentialId: "823403de950f4b8d9ddb6ad7a9f11f44",
       topics: "AI Analysis • Machine Learning",
+      description: "",
       icon: Brain,
       bgColor: "from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20",
       borderColor: "border-purple-200 dark:border-purple-800",
@@ -87,7 +99,9 @@ export function Certifications() {
       title: "Accelerating Deep Learning with GPUs",
       provider: "Lovely Professional University",
       date: "APR 2025",
+      credentialId: "d18c1a43ddda4d84b160295f910e5767",
       topics: "GPU Computing • Deep Learning",
+      description: "",
       icon: Cpu,
       bgColor: "from-rose-50 to-pink-50 dark:from-rose-900/20 dark:to-pink-900/20",
       borderColor: "border-rose-200 dark:border-rose-800",
@@ -100,7 +114,9 @@ export function Certifications() {
       title: "Big Data Architecture",
       provider: "Lovely Professional University",
       date: "APR 2025",
+      credentialId: "86bae01228884b76bcfefdc7f2b8c556",
       topics: "Big Data • Data Architecture",
+      description: "",
       icon: Database,
       bgColor: "from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20",
       borderColor: "border-indigo-200 dark:border-indigo-800",
@@ -113,7 +129,9 @@ export function Certifications() {
       title: "Business Intelligence",
       provider: "Lovely Professional University",
       date: "JAN 2025",
+      credentialId: "fb023c4ff2834598a53151ae777ee193",
       topics: "Business Intelligence • Analytics",
+      description: "",
       icon: BarChart3,
       bgColor: "from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20",
       borderColor: "border-blue-200 dark:border-blue-800",
@@ -126,7 +144,9 @@ export function Certifications() {
       title: "Data Science 101",
       provider: "Lovely Professional University",
       date: "JAN 2025",
+      credentialId: "7fbe1a9b59d441b399229919a0c12378",
       topics: "Data Science • Statistics",
+      description: "",
       icon: Database,
       bgColor: "from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20",
       borderColor: "border-cyan-200 dark:border-cyan-800",
@@ -139,7 +159,9 @@ export function Certifications() {
       title: "Data Visualization with Python",
       provider: "Lovely Professional University",
       date: "JAN 2025",
+      credentialId: "743b6dec2daf41c5a2e7cc0978dbf1e6",
       topics: "Python (Programming Language) • Data Visualization",
+      description: "",
       icon: BarChart3,
       bgColor: "from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20",
       borderColor: "border-amber-200 dark:border-amber-800",
@@ -152,7 +174,9 @@ export function Certifications() {
       title: "Machine Learning with Python",
       provider: "Lovely Professional University",
       date: "JAN 2025",
+      credentialId: "13b5930351d343b5a68f227d570ca95c",
       topics: "Python (Programming Language) • Machine Learning",
+      description: "",
       icon: Bot,
       bgColor: "from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20",
       borderColor: "border-emerald-200 dark:border-emerald-800",
@@ -166,7 +190,9 @@ export function Certifications() {
       title: "Complete Ethical Hacking Bootcamp 2022: Zero to Mastery",
       provider: "Udemy",
       date: "MAR 2021",
+      credentialId: "UC-2ead7398-54eb-4373-b6fc-7f6626056d91",
       topics: "Python (Programming Language) • Kali Linux",
+      description: "",
       icon: Shield,
       bgColor: "from-red-50 to-rose-50 dark:from-red-900/20 dark:to-rose-900/20",
       borderColor: "border-red-200 dark:border-red-800",
@@ -206,10 +232,20 @@ export function Certifications() {
                         <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
                           {cert.date}
                         </p>
-                        <div className={`flex items-center justify-center gap-1 ${cert.topicsColor}`}>
+                        <div className={`flex items-center justify-center gap-1 ${cert.topicsColor} mb-2`}>
                           <Award className="h-3 w-3" />
-                          <span className="text-xs">{cert.topics}</span>
+                          <span className="text-xs text-center">{cert.topics}</span>
                         </div>
+                        {cert.description && (
+                          <p className="text-xs text-gray-600 dark:text-gray-500 mt-2 leading-relaxed line-clamp-3">
+                            {cert.description}
+                          </p>
+                        )}
+                        {cert.credentialId && (
+                          <p className="text-xs text-gray-400 dark:text-gray-600 mt-1">
+                            ID: {cert.credentialId}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </CardContent>
