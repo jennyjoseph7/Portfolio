@@ -40,12 +40,14 @@ export function About() {
                 <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-gray-800 p-2">
                   <div className="w-full h-full rounded-2xl overflow-hidden">
                     <img
-                      src="/profile.jpg?v=2"
+                      src="/profile.jpg"
                       alt="Jenny Joseph K - Professional Portrait"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out relative z-0"
                       onError={(e) => {
                         // Fallback if image doesn't load
-                        console.error('Profile image failed to load');
+                        const target = e.target as HTMLImageElement;
+                        target.src = '/profile.jpg?' + Date.now();
+                        console.error('Profile image failed to load, retrying...');
                       }}
                     />
                     {/* Gradient Overlay */}
