@@ -35,16 +35,17 @@ export function Hero() {
             <Button 
               size="lg" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
-              onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/resume.pdf';
-                link.download = 'Resume.pdf';
-                link.target = '_blank';
-                link.click();
-              }}
+              asChild
             >
-              <Download className="mr-2 h-5 w-5" />
-              View Resume
+              <a 
+                href="/Resume.pdf" 
+                download="Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                View Resume
+              </a>
             </Button>
 
             <div className="flex gap-4">
