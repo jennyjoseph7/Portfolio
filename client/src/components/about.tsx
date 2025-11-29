@@ -42,14 +42,14 @@ export function About() {
                     <img
                       src="/profile.jpg?v=2"
                       alt="Jenny Joseph K - Professional Portrait"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out relative z-0"
                       onError={(e) => {
                         // Fallback if image doesn't load
                         console.error('Profile image failed to load');
                       }}
                     />
                     {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-600/30 via-transparent to-emerald-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-600/30 via-transparent to-emerald-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                   </div>
                 </div>
               </div>
