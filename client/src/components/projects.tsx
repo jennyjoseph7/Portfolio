@@ -1,4 +1,4 @@
-import { Brain, Heart, Trophy, Code, Smartphone } from "lucide-react";
+import { Brain, Heart, Trophy, Code, Smartphone, Github } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,8 @@ export function Projects() {
       icon: Code,
       achievement: "Associated with Lovely Professional University",
       achievementIcon: Code,
-      color: "blue"
+      color: "blue",
+      githubUrl: "https://github.com/jennyjoseph7/jennyjoseph7.github.io"
     },
     {
       id: 2,
@@ -27,7 +28,8 @@ export function Projects() {
       icon: Heart,
       achievement: "Associated with JP Morgan Chase & Co",
       achievementIcon: Trophy,
-      color: "purple"
+      color: "purple",
+      githubUrl: "" // Add GitHub URL if available
     },
     {
       id: 3,
@@ -39,7 +41,8 @@ export function Projects() {
       icon: Brain,
       achievement: "April 2025",
       achievementIcon: Trophy,
-      color: "emerald"
+      color: "emerald",
+      githubUrl: "" // Add GitHub URL if available
     },
   ];
 
@@ -130,9 +133,23 @@ export function Projects() {
                         <AchievementIcon className="h-4 w-4" />
                         <span className="text-sm font-medium">{project.achievement}</span>
                       </div>
-                      <Button variant="ghost" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm p-0">
-                        View Details →
-                      </Button>
+                      {project.githubUrl && (
+                        <Button 
+                          variant="ghost" 
+                          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm p-0"
+                          asChild
+                        >
+                          <a 
+                            href={project.githubUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1 hover:gap-2 transition-all"
+                          >
+                            <Github className="h-4 w-4" />
+                            View on GitHub
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
