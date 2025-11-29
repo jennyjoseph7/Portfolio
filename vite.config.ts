@@ -25,7 +25,7 @@ export default defineConfig(async () => {
       },
     },
     root: path.resolve(import.meta.dirname, "client"),
-    base: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '/',
+    base: '/',
     build: {
       outDir: path.resolve(import.meta.dirname, "dist"),
       emptyOutDir: true,
