@@ -80,11 +80,11 @@ export function Timeline() {
       type: "project",
       title: "Mindwell",
       organization: "MCA Final Year Project",
-      period: "April 2025",
+      period: "December 2025",
       description: "",
       achievements: [],
       color: "purple",
-      status: "completed"
+      status: "Ongoing"
     },
     {
       id: "7",
