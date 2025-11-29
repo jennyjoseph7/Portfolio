@@ -29,7 +29,7 @@ export function Projects() {
       achievement: "Associated with JP Morgan Chase & Co",
       achievementIcon: Trophy,
       color: "purple",
-      githubUrl: "" // Add GitHub URL if available
+      githubUrl: "https://github.com/jennyjoseph7/forage-midas1" // Add GitHub URL if available
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export function Projects() {
       achievement: "April 2025",
       achievementIcon: Trophy,
       color: "emerald",
-      githubUrl: "" // Add GitHub URL if available
+      githubUrl: "https://github.com/jennyjoseph7/MindWell" // Add GitHub URL if available
     },
   ];
 
