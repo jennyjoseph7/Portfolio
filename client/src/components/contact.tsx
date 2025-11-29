@@ -116,7 +116,7 @@ export function Contact() {
     {
       icon: MapPin,
       label: "Location",
-      value: "Punjab, India",
+      value: "Bengaluru, Karnataka, India",
       href: "#",
       color: "purple"
     }

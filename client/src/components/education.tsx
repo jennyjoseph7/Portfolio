@@ -7,7 +7,7 @@ export function Education() {
     {
       degree: "Master of Computer Applications",
       institution: "Lovely Professional University, Punjab",
-      period: "Aug 2023 – 2025",
+      period: "January 2023 – December 2025",
       grade: "CGPA: 6.63",
       color: "blue",
       position: "left",
@@ -17,7 +17,7 @@ export function Education() {
     {
       degree: "Bachelor of Computer Application",
       institution: "Acharya Institute, Bangalore",
-      period: "2020 – 2023",
+      period: "January 2020 – December 2023",
       grade: "76.5%",
       color: "emerald",
       position: "right",
@@ -25,9 +25,9 @@ export function Education() {
       description: "Foundation in Computer Science, Programming, and System Design"
     },
     {
-      degree: "12th & 10th Grade",
-      institution: "Kendriya Vidyalaya Rail Wheel Factory, Bangalore",
-      period: "2017 – 2019",
+      degree: "12th & 10th Grade (Computer Science)",
+      institution: "Kendriya Vidyalaya",
+      period: "January 2017 – December 2019",
       grade: "",
       color: "amber",
       position: "left",

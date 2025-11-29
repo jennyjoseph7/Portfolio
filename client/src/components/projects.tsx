@@ -7,39 +7,39 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "AI-Powered Mental Health Tracker with Chatbot Support",
-      description: "A comprehensive mobile application combining mood tracking, AI chatbot interaction, music therapy, and gamified mental health engagement. Features secure authentication, sentiment analysis, and emergency contact management for preventive mental healthcare.",
+      title: "MindWell - AI Mental Health Companion",
+      description: "An AI-first mental health companion for college students. Features emotion intelligence recognizing 11 emotional categories, crisis-aware copilot with pattern detection, daily journaling with mood tracking, and comprehensive analytics. Built with React and Flask stack with modular architecture including story engine, reaction interpreter, and safety layer.",
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      tech: ["React Native", "Flask", "NLP", "SQLite", "NativeBase"],
+      tech: ["React", "Flask", "NLP", "Emotion Intelligence", "Analytics"],
       icon: Brain,
       achievement: "MCA Final Year Project",
       achievementIcon: Trophy,
       color: "emerald",
-      features: ["AI Chatbot", "Mood Tracking", "Music Therapy", "Honor Score System"]
+      features: ["AI Chatbot", "Emotion Intelligence", "Crisis Detection", "Daily Journaling"]
     },
     {
       id: 2,
-      title: "MedBuddy – Smart Drug Dispenser",
-      description: "A medication management app that won 1st place at Innothon by LPU. Built with a team to improve healthcare access using AI-powered recommendations and automated dispensing.",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      tech: ["Python", "Mobile Tech", "ML", "IoT"],
-      icon: Heart,
-      achievement: "1st Place Winner",
-      achievementIcon: Trophy,
+      title: "Portfolio Website",
+      description: "A personal portfolio website showcasing my projects, skills, and experiences. Built using modern web technologies and designed to highlight my abilities in both frontend and backend development.",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      tech: ["React", "TypeScript", "Vite", "Express", "Tailwind CSS"],
+      icon: Code,
+      achievement: "Personal Project",
+      achievementIcon: Code,
       color: "blue",
-      features: ["AI Recommendations", "Automated Dispensing", "Healthcare Access"]
+      features: ["React Frontend", "Express Backend", "Modern Design", "Responsive"]
     },
     {
       id: 3,
-      title: "Movie Recommendation System",
-      description: "Built a recommendation engine using Python and ML libraries to suggest movies based on user preferences, viewing history, and collaborative filtering algorithms.",
-      image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      tech: ["Python", "Pandas", "scikit-learn", "Matplotlib"],
-      icon: Smartphone,
-      achievement: "Machine Learning",
-      achievementIcon: Code,
+      title: "Forage Midas Project",
+      description: "This repository contains the solution to the Forage Midas virtual experience program. It demonstrates the application of data analytics skills to real world business problems, focusing on extracting actionable insights, visualizing key metrics, and making strategic recommendations.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      tech: ["Data Analytics", "Python", "Visualization", "Business Intelligence"],
+      icon: Heart,
+      achievement: "Virtual Experience",
+      achievementIcon: Trophy,
       color: "purple",
-      features: ["Collaborative Filtering", "User Preferences", "Data Analysis"]
+      features: ["Data Cleaning", "Exploratory Analysis", "Dashboard Creation", "Strategic Recommendations"]
     },
   ];
 

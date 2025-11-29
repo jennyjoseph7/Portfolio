@@ -21,13 +21,14 @@ export function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4 font-medium animate-fadeInUp px-4" style={{ animationDelay: '0.2s' }}>
-            AI Engineer | DevOps Enthusiast | Certified Professional | Problem Solver
+            MCA AI/ML 2025 | DevOps Enthusiast | Software Engineer
           </p>
 
           <p className="text-base sm:text-lg text-gray-700 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp px-4" style={{ animationDelay: '0.4s' }}>
-            Master's candidate with proven expertise in AI/ML, 10+ professional certifications, and hands-on experience 
-            building production-ready applications. Currently seeking DevOps or AI engineering opportunities to drive 
-            innovation and scalable solutions in dynamic tech environments.
+            I'm in my final year of MCA, starting in DevOps with a strong interest in how systems run behind the scenes. 
+            What pulled me in wasn't just the tech but the way DevOps brings development and operations together to build 
+            things that work and scale. Looking for an internship or entry level role where I can keep learning, contribute 
+            to real projects, and grow with a team that's serious about building good systems.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp px-4" style={{ animationDelay: '0.6s' }}>

@@ -80,23 +80,23 @@ export function About() {
             <div className="space-y-8 order-1 lg:order-2">
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  My journey began with a Bachelor's in Computer Applications from Acharya Institute, Bangalore, 
-                  where I discovered my passion for technology and problem-solving. Now pursuing my Master's at 
-                  Lovely Professional University, I've immersed myself in the world of <span className="font-semibold text-blue-600 dark:text-blue-400">AI, DevOps, and ethical hacking</span>.
+                  I'm in my final year of MCA, starting in DevOps with a strong interest in how systems run behind the scenes. 
+                  What pulled me in wasn't just the tech but the way DevOps brings development and operations together to build 
+                  things that work and scale.
                 </p>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  What drives me is the ability to <span className="font-semibold text-emerald-600 dark:text-emerald-400">adapt and learn continuously</span>. 
-                  I've gained hands-on experience with cutting-edge tools like TensorFlow for machine learning, 
-                  Kali Linux for cybersecurity, and React Native for mobile development. My goal is to build 
-                  systems that solve real-world problems and make technology more accessible.
+                  I've been learning by doing. Version control, CI/CD, containers, and cloud basics. These experiences taught me 
+                  the value of <span className="font-semibold text-emerald-600 dark:text-emerald-400">consistency, automation, and asking the right questions</span> when things go wrong. 
+                  I'm now looking for an internship or entry level role where I can keep learning, contribute to real projects, 
+                  and grow with a team that's serious about building good systems.
                 </p>
               </div>
 
               {/* Location Badge */}
               <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
                 <MapPin className="h-5 w-5" />
-                <span className="text-sm">Punjab, India</span>
+                <span className="text-sm">Bengaluru, Karnataka, India</span>
               </div>
             </div>
           </div>
@@ -135,8 +135,8 @@ export function About() {
                 </h4>
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-lg mb-4">
-                DevOps or AI-based internships where I can apply my skills and continue learning 
-                in a dynamic, innovative environment.
+                An internship or entry level role where I can keep learning, contribute to real projects, 
+                and grow with a team that's serious about building good systems.
               </p>
               <div className="flex flex-wrap justify-center gap-2">
                 <Badge variant="secondary" className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300">
