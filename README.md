@@ -75,34 +75,6 @@ This project is configured to deploy automatically to GitHub Pages using GitHub 
 
 The site will be available at: `https://yourusername.github.io/ClientPortfolio/`
 
-## Email Configuration
-
-The contact form sends emails using SendGrid. To enable email functionality:
-
-1. **Get a SendGrid API Key:**
-   - Sign up at [SendGrid](https://sendgrid.com/)
-   - Go to Settings → API Keys
-   - Create a new API key with "Mail Send" permissions
-
-2. **Verify a Sender Email:**
-   - In SendGrid, go to Settings → Sender Authentication
-   - Verify a sender email address (this will be the "from" address)
-
-3. **Set Environment Variables:**
-   - Copy `.env.example` to `.env`
-   - Add your SendGrid API key and email settings:
-   ```env
-   SENDGRID_API_KEY=your_api_key_here
-   CONTACT_EMAIL=jennyjosephksj7@gmail.com
-   SENDGRID_FROM_EMAIL=your_verified_sender@example.com
-   ```
-
-4. **For Production Deployment:**
-   - Add these environment variables to your hosting platform (Render, Railway, Vercel, etc.)
-   - The contact form will automatically send emails when configured
-
-**Note:** If SendGrid is not configured, the contact form will still save messages to storage, but emails won't be sent.
-
 ## Features
 
 - Responsive design
