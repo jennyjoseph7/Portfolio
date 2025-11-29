@@ -35,6 +35,7 @@ export function Skills() {
       color: "emerald",
       skills: [
         { name: "React", level: 85 },
+        { name: "Next.js", level: 80 },
         { name: "Spring Boot", level: 80 },
         { name: "Flask", level: 75 },
         { name: "Node.js", level: 75 },
@@ -57,6 +58,7 @@ export function Skills() {
       color: "amber",
       skills: [
         { name: "SQL", level: 80 },
+        { name: "MySQL", level: 80 },
         { name: "Data Analysis", level: 85 },
         { name: "Data Modeling", level: 80 },
         { name: "Data Visualization", level: 80 },
@@ -88,7 +90,9 @@ export function Skills() {
         "Agile",
         "API Development",
         "Data Visualization Tools",
-        "Spreadsheet Skills"
+        "Spreadsheet Skills",
+        "Tailwind CSS",
+        "CSS"
       ]
     }
   ];
