@@ -32,27 +32,9 @@ export function About() {
             <h2 className="text-4xl font-bold mb-4">About Me</h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12">
-            {/* Profile Picture Section */}
-            <div className="flex justify-center order-2 lg:order-1">
-              <div className="relative group">
-                {/* Profile Picture with Modern Design */}
-                <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-gray-800 p-2">
-                  <div className="w-full h-full rounded-2xl overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800"
-                      alt="Jenny Joseph K - Professional Portrait"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                    />
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-600/30 via-transparent to-emerald-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          <div className="max-w-4xl mx-auto">
             {/* Content Section */}
-            <div className="space-y-8 order-1 lg:order-2">
+            <div className="space-y-8">
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                   I'm in my final year of MCA, starting in DevOps with a strong interest in how systems run behind the scenes. What pulled me in wasn't just the tech but the way DevOps brings development and operations together to build things that work and scale.
