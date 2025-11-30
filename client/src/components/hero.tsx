@@ -24,12 +24,7 @@ export function Hero() {
             MCA AI/ML 2025 | DevOps Enthusiast | Software Engineer
           </p>
 
-          <p className="text-base sm:text-lg text-gray-700 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp px-4" style={{ animationDelay: '0.4s' }}>
-            I'm in my final year of MCA, starting in DevOps with a strong interest in how systems run behind the scenes. 
-            What pulled me in wasn't just the tech but the way DevOps brings development and operations together to build 
-            things that work and scale. Looking for a Entry level role where I can keep learning, contribute 
-            to real projects, and grow with a team that's serious about building good systems.
-          </p>
+
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp px-4" style={{ animationDelay: '0.6s' }}>
             <Button 

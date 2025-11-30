@@ -69,8 +69,12 @@ export function About() {
                 </p>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I'm now looking for an Entry level role where I can keep learning, contribute to real projects, and grow with a team that's serious about building good systems.
-                </p>
+                I am in the final year of my MCA in AI ML, and over time I’ve shifted toward DevOps and system engineering because I enjoy understanding how things actually run beneath the surface. I learn best by doing, so most of my experience comes from working with version control, CICD basics, container concepts, and cloud fundamentals across projects and simulations. I’ve also completed industry virtual programs with AWS, Accenture, Citi, Deloitte, HPE, and JP Morgan, which helped me understand real software engineering workflows and analytics driven tasks.
+
+My projects reflect the path I’m building. MindWell let me work on applied AI with a focus on safety, emotion interpretation, and clean interface behavior. The Forage Midas project strengthened my ability to work with data, analyse patterns, and produce structured insights. Friends Cafe helped me grow in React, Nextjs, TypeScript, MySQL, and API based system design.
+
+I’m moving intentionally toward DevOps and backend engineering, developing a mindset around automation, reliability, and predictable system behavior. I’m now looking for an entry level role where I can work on real systems, learn from practical challenges, and build strong engineering habits.
+                  </p>
               </div>
 
               {/* Location Badge */}
