@@ -14,17 +14,17 @@ export function Hero() {
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-emerald-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-900"></div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-emerald-600 to-blue-800 bg-clip-text text-transparent animate-fadeInUp">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 via-emerald-600 to-blue-800 bg-clip-text text-transparent animate-fadeInUp">
             Jenny Joseph K
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-medium animate-fadeInUp px-4" style={{ animationDelay: '0.2s' }}>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 font-medium animate-fadeInUp px-2 sm:px-4" style={{ animationDelay: '0.2s' }}>
             MCA AI/ML 2025 | DevOps Enthusiast | Software Engineer
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp px-4" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fadeInUp px-2 sm:px-4 mt-4 sm:mt-0" style={{ animationDelay: '0.4s' }}>
             <Button 
               size="lg" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
@@ -41,7 +41,7 @@ export function Hero() {
               </a>
             </Button>
 
-            <div className="flex gap-4">
+            <div className="flex gap-3 sm:gap-4 w-full sm:w-auto justify-center">
               <Button
                 variant="secondary"
                 size="lg"
