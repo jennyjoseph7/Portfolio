@@ -20,13 +20,11 @@ export function Hero() {
             Jenny Joseph K
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4 font-medium animate-fadeInUp px-4" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-medium animate-fadeInUp px-4" style={{ animationDelay: '0.2s' }}>
             MCA AI/ML 2025 | DevOps Enthusiast | Software Engineer
           </p>
 
-
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp px-4" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp px-4" style={{ animationDelay: '0.4s' }}>
             <Button 
               size="lg" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
