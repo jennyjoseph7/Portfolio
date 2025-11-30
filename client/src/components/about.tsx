@@ -69,7 +69,7 @@ export function About() {
                 </p>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I'm now looking for an internship or entry level role where I can keep learning, contribute to real projects, and grow with a team that's serious about building good systems.
+                  I'm now looking for an Entry level role where I can keep learning, contribute to real projects, and grow with a team that's serious about building good systems.
                 </p>
               </div>
 
