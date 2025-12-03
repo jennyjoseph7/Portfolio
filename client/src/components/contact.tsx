@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export function Contact() {
@@ -17,13 +17,6 @@ export function Contact() {
       value: "+91-9035937158",
       href: "tel:+919035937158",
       color: "emerald"
-    },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "Bengaluru, Karnataka, India",
-      href: "#",
-      color: "purple"
     }
   ];
 
@@ -47,8 +40,7 @@ export function Contact() {
                 const IconComponent = info.icon;
                 const colorClasses = {
                   blue: "bg-blue-100 dark:bg-blue-900/30 text-blue-600",
-                  emerald: "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600",
-                  purple: "bg-purple-100 dark:bg-purple-900/30 text-purple-600"
+                  emerald: "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600"
                 };
 
                 return (
