@@ -61,7 +61,7 @@ export function About() {
             <div className="space-y-8 order-1 lg:order-2">
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                I am in the final year of my MCA in AI ML and I have been moving toward DevOps because I like understanding how systems behave behind the scenes. Most of my learning comes from doing real work with version control, CICD basics, container concepts, and cloud fundamentals.
+                I finished my MCA in AI ML and I have been moving toward DevOps because I like understanding how systems behave behind the scenes. Most of my learning comes from doing real work with version control, CICD basics, container concepts, and cloud fundamentals.
                  </p>
 
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
