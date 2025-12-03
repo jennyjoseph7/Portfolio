@@ -312,7 +312,7 @@ export function Timeline() {
   const filterOptions = [
     { value: "all", label: "All Events", icon: Clock },
     { value: "education", label: "Education", icon: GraduationCap },
-    { value: "experience", label: "Experience", icon: Briefcase },
+    { value: "experience", label: "Internships", icon: Briefcase },
     { value: "project", label: "Projects", icon: Code },
     { value: "certification", label: "Certifications", icon: Award }
   ];
