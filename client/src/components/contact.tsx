@@ -29,10 +29,6 @@ export function Contact() {
               <h3 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">
                 Let's Connect
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto">
-                Whether you're looking for a dedicated AI engineer, DevOps enthusiast, or someone passionate about 
-                ethical hacking, I'd love to hear from you. Feel free to reach out through any of the channels below.
-              </p>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">
