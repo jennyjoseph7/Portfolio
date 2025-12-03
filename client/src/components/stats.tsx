@@ -20,7 +20,7 @@ export function Stats() {
     {
       icon: Clock,
       number: "4",
-      label: "Experiences",
+      label: "Internships",
       description: "",
       color: "purple"
     }
