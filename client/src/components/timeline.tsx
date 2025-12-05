@@ -48,8 +48,8 @@ export function Timeline() {
       title: "Developer and Technology",
       organization: "Accenture UK · Internship",
       period: "November 2025 - November 2025",
-      description: "Completed Accenture Job Simulation with practical tasks in requirement analysis, software testing, and quality assurance. Applied SDLC, STLC, UML, and regression testing concepts to realistic project scenarios. Strengthened skills in test case design, documentation, process modelling, and defect understanding. Used tools and methods similar to JIRA style workflows and structured analysis to deliver clear outcomes.",
-      achievements: ["Process Mapping", "Software Quality Assurance", "Code Debugging", "Agile Methodology", "SDLC", "Software Testing"],
+      description: "",
+      achievements: [],
       color: "indigo",
       status: "completed"
     },
