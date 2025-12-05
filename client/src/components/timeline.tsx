@@ -95,7 +95,7 @@ export function Timeline() {
       description: "",
       achievements: [],
       color: "purple",
-      status: "ongoing"
+      status: "completed"
     },
     {
       id: "7",
