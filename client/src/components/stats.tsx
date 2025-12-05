@@ -19,7 +19,7 @@ export function Stats() {
     },
     {
       icon: Clock,
-      number: "4",
+      number: "5",
       label: "Internships",
       description: "",
       color: "purple"
