@@ -20,12 +20,36 @@ export function Timeline() {
   const [filter, setFilter] = useState<string>("all");
 
   const timelineEvents: TimelineEvent[] = [
+    // December 2025
+    {
+      id: "6",
+      type: "project",
+      title: "Mindwell",
+      organization: "MCA Final Year Project",
+      period: "December 2025",
+      description: "",
+      achievements: [],
+      color: "purple",
+      status: "completed"
+    },
     {
       id: "1",
       type: "education",
       title: "Master of Computer Applications (MCA)",
       organization: "Lovely Professional University",
       period: "January 2023 - December 2025",
+      description: "",
+      achievements: [],
+      color: "blue",
+      status: "completed"
+    },
+    // November 2025
+    {
+      id: "8",
+      type: "project",
+      title: "Portfolio",
+      organization: "Associated with Lovely Professional University",
+      period: "January 2024 - November 2025",
       description: "",
       achievements: [],
       color: "blue",
@@ -53,117 +77,6 @@ export function Timeline() {
       color: "indigo",
       status: "completed"
     },
-    {
-      id: "3",
-      type: "experience",
-      title: "Software Engineer",
-      organization: "JP Morgan Chase & Co · Internship",
-      period: "October 2025 - October 2025",
-      description: "",
-      achievements: [],
-      color: "emerald",
-      status: "completed"
-    },
-    {
-      id: "4",
-      type: "experience",
-      title: "Business Growth Analyst",
-      organization: "MSsquare Technologies · Full-time",
-      period: "November 2024 - January 2025",
-      description: "",
-      achievements: [],
-      color: "purple",
-      status: "completed"
-    },
-    {
-      id: "5",
-      type: "experience",
-      title: "Intern",
-      organization: "Corizo · Internship",
-      period: "February 2024 - March 2024",
-      description: "",
-      achievements: [],
-      color: "amber",
-      status: "completed"
-    },
-    {
-      id: "6",
-      type: "project",
-      title: "Mindwell",
-      organization: "MCA Final Year Project",
-      period: "December 2025",
-      description: "",
-      achievements: [],
-      color: "purple",
-      status: "completed"
-    },
-    {
-      id: "7",
-      type: "project",
-      title: "Forage Midas Project",
-      organization: "Associated with JP Morgan Chase & Co",
-      period: "August 2025 - September 2025",
-      description: "",
-      achievements: [],
-      color: "indigo",
-      status: "completed"
-    },
-    {
-      id: "7a",
-      type: "project",
-      title: "Friends Cafe",
-      organization: "Personal Project",
-      period: "April 2025 - July 2025",
-      description: "",
-      achievements: ["TypeScript", "JavaScript", "MySQL", "CSS", "Tailwind CSS", "Next.js"],
-      color: "amber",
-      status: "completed"
-    },
-    {
-      id: "8",
-      type: "project",
-      title: "Portfolio",
-      organization: "Associated with Lovely Professional University",
-      period: "January 2024 - November 2025",
-      description: "",
-      achievements: [],
-      color: "blue",
-      status: "completed"
-    },
-    {
-      id: "9",
-      type: "education",
-      title: "Bachelor of Computer Applications",
-      organization: "Acharya Institute, Bangalore",
-      period: "January 2020 - December 2023",
-      description: "",
-      achievements: [],
-      color: "blue",
-      status: "completed"
-    },
-    {
-      id: "10",
-      type: "education",
-      title: "12th & 10th Grade",
-      organization: "Kendriya Vidyalaya",
-      period: "January 2017 - December 2019",
-      description: "",
-      achievements: [],
-      color: "amber",
-      status: "completed"
-    },
-    {
-      id: "11",
-      type: "experience",
-      title: "Volunteer",
-      organization: "Acharya - Arts and Culture",
-      period: "October 2022 - June 2023",
-      description: "",
-      achievements: [],
-      color: "purple",
-      status: "completed"
-    },
-    // Certifications
     {
       id: "12",
       type: "certification",
@@ -209,17 +122,6 @@ export function Timeline() {
       status: "completed"
     },
     {
-      id: "16",
-      type: "certification",
-      title: "J.P. Morgan Software Engineering Job Simulation",
-      organization: "Forage",
-      period: "October 2025",
-      description: "Completed J P Morgan Software Engineering Virtual Experience focused on end to end FinTech pipelines. Built Midas Core with Kafka streaming, Spring Boot services, and H2 with JPA. Developed REST APIs and integrated an external incentive calculation service. Implemented real time transaction validation, processing, and balance queries. Gained practical exposure to high volume fintech workflows.",
-      achievements: ["Spring Boot", "SQL Database", "REST APIs", "Kafka", "FinTech"],
-      color: "indigo",
-      status: "completed"
-    },
-    {
       id: "16a",
       type: "certification",
       title: "Deloitte Australia Data Analytics Job Simulation",
@@ -230,6 +132,54 @@ export function Timeline() {
       color: "cyan",
       status: "completed"
     },
+    // October 2025
+    {
+      id: "3",
+      type: "experience",
+      title: "Software Engineer",
+      organization: "JP Morgan Chase & Co · Internship",
+      period: "October 2025 - October 2025",
+      description: "",
+      achievements: [],
+      color: "emerald",
+      status: "completed"
+    },
+    {
+      id: "16",
+      type: "certification",
+      title: "J.P. Morgan Software Engineering Job Simulation",
+      organization: "Forage",
+      period: "October 2025",
+      description: "Completed J P Morgan Software Engineering Virtual Experience focused on end to end FinTech pipelines. Built Midas Core with Kafka streaming, Spring Boot services, and H2 with JPA. Developed REST APIs and integrated an external incentive calculation service. Implemented real time transaction validation, processing, and balance queries. Gained practical exposure to high volume fintech workflows.",
+      achievements: ["Spring Boot", "SQL Database", "REST APIs", "Kafka", "FinTech"],
+      color: "indigo",
+      status: "completed"
+    },
+    // September 2025
+    {
+      id: "7",
+      type: "project",
+      title: "Forage Midas Project",
+      organization: "Associated with JP Morgan Chase & Co",
+      period: "August 2025 - September 2025",
+      description: "",
+      achievements: [],
+      color: "indigo",
+      status: "completed"
+    },
+    // July 2025
+    {
+      id: "7a",
+      type: "project",
+      title: "Friends Cafe",
+      organization: "Personal Project",
+      period: "April 2025 - July 2025",
+      description: "",
+      achievements: ["TypeScript", "JavaScript", "MySQL", "CSS", "Tailwind CSS", "Next.js"],
+      color: "amber",
+      status: "completed"
+    },
+    // May 2025
     {
       id: "17",
       type: "certification",
@@ -241,6 +191,7 @@ export function Timeline() {
       color: "purple",
       status: "completed"
     },
+    // April 2025
     {
       id: "18",
       type: "certification",
@@ -261,6 +212,18 @@ export function Timeline() {
       description: "",
       achievements: ["Big Data", "Data Architecture"],
       color: "indigo",
+      status: "completed"
+    },
+    // January 2025
+    {
+      id: "4",
+      type: "experience",
+      title: "Business Growth Analyst",
+      organization: "MSsquare Technologies · Full-time",
+      period: "November 2024 - January 2025",
+      description: "",
+      achievements: [],
+      color: "purple",
       status: "completed"
     },
     {
@@ -307,6 +270,42 @@ export function Timeline() {
       color: "emerald",
       status: "completed"
     },
+    // March 2024
+    {
+      id: "5",
+      type: "experience",
+      title: "Intern",
+      organization: "Corizo · Internship",
+      period: "February 2024 - March 2024",
+      description: "",
+      achievements: [],
+      color: "amber",
+      status: "completed"
+    },
+    // June 2023
+    {
+      id: "11",
+      type: "experience",
+      title: "Volunteer",
+      organization: "Acharya - Arts and Culture",
+      period: "October 2022 - June 2023",
+      description: "",
+      achievements: [],
+      color: "purple",
+      status: "completed"
+    },
+    {
+      id: "9",
+      type: "education",
+      title: "Bachelor of Computer Applications",
+      organization: "Acharya Institute, Bangalore",
+      period: "January 2020 - December 2023",
+      description: "",
+      achievements: [],
+      color: "blue",
+      status: "completed"
+    },
+    // March 2021
     {
       id: "24",
       type: "certification",
@@ -316,6 +315,18 @@ export function Timeline() {
       description: "",
       achievements: ["Python", "Kali Linux", "Ethical Hacking"],
       color: "red",
+      status: "completed"
+    },
+    // December 2019
+    {
+      id: "10",
+      type: "education",
+      title: "12th & 10th Grade",
+      organization: "Kendriya Vidyalaya",
+      period: "January 2017 - December 2019",
+      description: "",
+      achievements: [],
+      color: "amber",
       status: "completed"
     }
   ];
