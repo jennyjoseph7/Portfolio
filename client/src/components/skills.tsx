@@ -1,10 +1,7 @@
 import { 
   Code, 
   Database, 
-  Cloud, 
-  Brain, 
-  Layers, 
-  Server
+  Brain
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,87 +9,54 @@ import { Badge } from "@/components/ui/badge";
 export function Skills() {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Full-Stack Development",
       icon: Code,
       color: "blue",
-      description: "Core languages I use to build robust and scalable applications",
-      skills: [
-        "Python",
-        "Java",
-        "JavaScript",
-        "TypeScript"
-      ]
-    },
-    {
-      title: "Frameworks & Libraries",
-      icon: Layers,
-      color: "emerald",
-      description: "Modern frameworks that power my full-stack development projects",
+      description: "Building responsive web applications with modern frameworks and clean architecture. Experienced in frontend design, backend APIs, and database integration.",
       skills: [
         "React",
         "Next.js",
-        "Spring Boot",
+        "TypeScript",
+        "JavaScript",
+        "Python",
         "Flask",
-        "Node.js"
-      ]
-    },
-    {
-      title: "Cloud & DevOps",
-      icon: Cloud,
-      color: "purple",
-      description: "Infrastructure and automation tools for seamless deployments",
-      skills: [
-        "AWS",
-        "Docker",
-        "CI/CD",
-        "Git"
-      ]
-    },
-    {
-      title: "Databases & Data",
-      icon: Database,
-      color: "amber",
-      description: "Data management and analysis tools for insights and persistence",
-      skills: [
-        "SQL",
-        "MySQL",
-        "Data Analysis",
-        "Data Modeling",
-        "Data Visualization",
-        "Machine Learning"
-      ]
-    },
-    {
-      title: "AI & Analytics",
-      icon: Brain,
-      color: "rose",
-      description: "Intelligent systems and analytical approaches to solve complex problems",
-      skills: [
-        "AI/ML",
-        "Deep Learning",
-        "NLP",
-        "Big Data"
-      ]
-    },
-    {
-      title: "Tools & Technologies",
-      icon: Server,
-      color: "cyan",
-      description: "Essential tools and methodologies that enhance my development workflow",
-      tools: [
-        "REST APIs",
-        "Kafka",
-        "JPA",
-        "Unit Testing",
-        "System Architecture",
-        "SDLC",
-        "Agile",
-        "API Development",
-        "Data Visualization Tools",
-        "Spreadsheet Skills",
+        "Node.js",
+        "HTML/CSS",
         "Tailwind CSS",
-        "CSS"
-      ]
+        "REST APIs"
+      ],
+      projects: "Projects: MindWell, Friends Cafe"
+    },
+    {
+      title: "Database & Backend Engineering",
+      icon: Database,
+      color: "emerald",
+      description: "Designing and implementing database schemas, optimizing queries, and building secure authentication systems for scalable applications.",
+      skills: [
+        "MySQL",
+        "SQL",
+        "Database Design",
+        "API Development",
+        "Authentication",
+        "OTP Systems",
+        "Git"
+      ],
+      projects: "Projects: Friends Cafe (inventory tracking), MindWell (user sessions)"
+    },
+    {
+      title: "AI & Machine Learning",
+      icon: Brain,
+      color: "purple",
+      description: "Applying machine learning to real-world problems with focus on emotion detection and intelligent systems. Integrating ML models into production applications.",
+      skills: [
+        "Python",
+        "Machine Learning",
+        "Emotion Detection",
+        "Model Integration",
+        "Data Analysis",
+        "Flask APIs"
+      ],
+      projects: "Projects: MindWell (11-category emotion detection with crisis detection)"
     }
   ];
 
@@ -159,7 +123,7 @@ export function Skills() {
               Skills & Technologies
             </h2>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto px-4">
-              A comprehensive collection of technologies and tools I work with, based on my projects, certifications, and professional experience.
+              The technologies I actively work with, backed by real projects and hands-on experience.
             </p>
           </div>
 
@@ -193,14 +157,14 @@ export function Skills() {
 
                     {/* Description */}
                     {category.description && (
-                      <p className={`text-sm ${colors.description} mb-5 leading-relaxed italic`}>
+                      <p className={`text-sm ${colors.description} mb-5 leading-relaxed`}>
                         {category.description}
                       </p>
                     )}
 
                     {/* Skills as badges */}
-                    {category.skills ? (
-                      <div className="flex flex-wrap gap-2">
+                    {category.skills && (
+                      <div className="flex flex-wrap gap-2 mb-4">
                         {category.skills.map((skill, skillIndex) => (
                           <Badge 
                             key={skillIndex} 
@@ -211,19 +175,13 @@ export function Skills() {
                           </Badge>
                         ))}
                       </div>
-                    ) : (
-                      // Tools as badges
-                      <div className="flex flex-wrap gap-2">
-                        {category.tools?.map((tool, toolIndex) => (
-                          <Badge 
-                            key={toolIndex} 
-                            variant="secondary" 
-                            className={`text-xs px-3 py-1.5 ${colors.badge} border hover:scale-110 transition-all duration-200 shadow-sm hover:shadow-md font-medium`}
-                          >
-                            {tool}
-                          </Badge>
-                        ))}
-                      </div>
+                    )}
+
+                    {/* Projects */}
+                    {category.projects && (
+                      <p className={`text-xs ${colors.description} mt-4 pt-4 border-t ${colors.border} italic`}>
+                        {category.projects}
+                      </p>
                     )}
                   </CardContent>
                 </Card>
