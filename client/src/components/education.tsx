@@ -11,7 +11,7 @@ export function Education() {
       grade: "CGPA: 6.63",
       color: "blue",
       position: "left",
-      status: "Current",
+      status: "Completed",
       description: ""
     },
     {
