@@ -21,7 +21,7 @@ export function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 font-medium animate-fadeInUp px-2 sm:px-4" style={{ animationDelay: '0.2s' }}>
-          Full-Stack Developer | React, Next.js, Python, Flask | MCA Graduate Dec 2025
+          Full-Stack Developer | Java, React, Next.js, Python, Flask | MCA Graduate Dec 2025
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fadeInUp px-2 sm:px-4 mt-4 sm:mt-0" style={{ animationDelay: '0.4s' }}>
