@@ -195,7 +195,7 @@ export function Education() {
                     </div>
 
                     {/* Right side content */}
-                    <div className={`w-1/2 ${!isLeft ? "pl-12" : "pl-12"}`}>
+                    <div className={`hidden lg:block w-1/2 ${!isLeft ? "pl-12" : "pl-12"}`}>
                       {!isLeft && (
                         <Card className={`bg-gradient-to-br ${colors.bg} border ${colors.border} hover:shadow-xl transition-all duration-300 hover-lift group/card`}>
                           <CardContent className="p-8">
