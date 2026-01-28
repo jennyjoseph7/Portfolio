@@ -3,9 +3,7 @@ import { Hero } from "@/components/hero";
 import { Stats } from "@/components/stats";
 import { About } from "@/components/about";
 import { Skills } from "@/components/skills";
-import { DevOps } from "@/components/devops";
 import { Projects } from "@/components/projects";
-import { Achievements } from "@/components/achievements";
 import { Certifications } from "@/components/certifications";
 import { Education } from "@/components/education";
 import { Timeline } from "@/components/timeline";
@@ -21,9 +19,7 @@ export default function Home() {
         <Stats />
         <About />
         <Skills />
-        <DevOps />
         <Projects />
-        <Achievements />
         <Certifications />
         <Education />
         <Timeline />
