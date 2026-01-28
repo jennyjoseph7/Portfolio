@@ -69,7 +69,7 @@ export function Projects() {
             {projects.map((project) => {
               const IconComponent = project.icon;
               const AchievementIcon = project.achievementIcon;
-              
+
               const getColorClasses = (color: string) => {
                 switch (color) {
                   case 'emerald':
@@ -106,7 +106,7 @@ export function Projects() {
               };
 
               const colors = getColorClasses(project.color);
-              
+
               return (
                 <Card key={project.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover-lift">
                   <div className="relative overflow-hidden">
@@ -114,10 +114,15 @@ export function Projects() {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600';
+                      }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  
+
                   <CardContent className="p-6">
                     <CardHeader className="p-0 mb-4">
                       <div className="flex items-start gap-3">
@@ -129,38 +134,38 @@ export function Projects() {
                         </div>
                       </div>
                     </CardHeader>
-                    
+
                     <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed text-sm">
                       {project.description}
                     </p>
 
-                    
+
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.map((tech, index) => (
-                        <Badge 
-                          key={index} 
-                          variant="secondary" 
+                        <Badge
+                          key={index}
+                          variant="secondary"
                           className={`text-xs ${colors.badge}`}
                         >
                           {tech}
                         </Badge>
                       ))}
                     </div>
-                    
+
                     <div className="flex items-center justify-between">
                       <div className={`flex items-center gap-2 ${colors.achievement}`}>
                         <AchievementIcon className="h-4 w-4" />
                         <span className="text-sm font-medium">{project.achievement}</span>
                       </div>
                       {project.githubUrl && (
-                        <Button 
-                          variant="ghost" 
+                        <Button
+                          variant="ghost"
                           className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm p-0"
                           asChild
                         >
-                          <a 
-                            href={project.githubUrl} 
-                            target="_blank" 
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-1 hover:gap-2 transition-all"
                           >

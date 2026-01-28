@@ -21,7 +21,9 @@ export default function Home() {
         <Stats />
         <About />
         <Skills />
+        <DevOps />
         <Projects />
+        <Achievements />
         <Certifications />
         <Education />
         <Timeline />
