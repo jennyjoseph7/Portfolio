@@ -14,6 +14,7 @@ export function Header() {
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
+    { href: "#certifications", label: "Certifications" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -28,7 +29,7 @@ export function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      
+
       // Determine active section based on scroll position
       const sections = navItems.map(item => item.href.substring(1));
       const scrollPosition = window.scrollY + 100;
@@ -47,11 +48,10 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled 
-        ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-xl border-b border-gray-200/60 dark:border-gray-800/60" 
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-xl border-b border-gray-200/60 dark:border-gray-800/60"
         : "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md border-b border-gray-200/40 dark:border-gray-800/40"
-    }`}>
+      }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -76,16 +76,14 @@ export function Header() {
                   <button
                     key={item.href}
                     onClick={() => scrollToSection(item.href)}
-                    className={`px-4 py-2 rounded-lg transition-all duration-200 font-medium relative group ${
-                      isActive
+                    className={`px-4 py-2 rounded-lg transition-all duration-200 font-medium relative group ${isActive
                         ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 shadow-sm"
                         : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20"
-                    }`}
+                      }`}
                   >
                     {item.label}
-                    <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-emerald-600 transition-all duration-300 ${
-                      isActive ? "w-full" : "w-0 group-hover:w-full"
-                    }`}></div>
+                    <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-emerald-600 transition-all duration-300 ${isActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}></div>
                   </button>
                 );
               })}
@@ -97,19 +95,17 @@ export function Header() {
               <div className="relative">
                 <button
                   onClick={toggleTheme}
-                  className={`relative w-14 h-7 sm:w-16 sm:h-8 rounded-full p-0.5 sm:p-1 transition-all duration-300 shadow-lg hover:shadow-xl border focus:outline-none focus:ring-2 focus:ring-blue-500/50 ${
-                    theme === "light"
+                  className={`relative w-14 h-7 sm:w-16 sm:h-8 rounded-full p-0.5 sm:p-1 transition-all duration-300 shadow-lg hover:shadow-xl border focus:outline-none focus:ring-2 focus:ring-blue-500/50 ${theme === "light"
                       ? "bg-gradient-to-r from-blue-100 to-blue-200 border-blue-200 hover:from-blue-200 hover:to-blue-300"
                       : "bg-gradient-to-r from-gray-700 to-gray-800 border-gray-600 hover:from-gray-600 hover:to-gray-700"
-                  }`}
+                    }`}
                 >
                   {/* Sliding Circle - Responsive */}
                   <div
-                    className={`absolute top-0.5 sm:top-1 w-5 h-5 sm:w-6 sm:h-6 rounded-full shadow-md transition-all duration-300 flex items-center justify-center ${
-                      theme === "light"
+                    className={`absolute top-0.5 sm:top-1 w-5 h-5 sm:w-6 sm:h-6 rounded-full shadow-md transition-all duration-300 flex items-center justify-center ${theme === "light"
                         ? "left-0.5 sm:left-1 bg-gradient-to-r from-amber-400 to-yellow-500"
                         : "left-8 sm:left-[2.25rem] bg-gradient-to-r from-blue-500 to-indigo-600"
-                    }`}
+                      }`}
                   >
                     {theme === "light" ? (
                       <Sun className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-white" />
@@ -117,17 +113,15 @@ export function Header() {
                       <Moon className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-white" />
                     )}
                   </div>
-                  
+
                   {/* Background Icons - Responsive */}
                   <div className="absolute inset-0 flex items-center justify-between px-1.5 sm:px-2">
-                    <Sun className={`h-2.5 w-2.5 sm:h-3 sm:w-3 transition-opacity duration-300 ${
-                      theme === "light" ? "opacity-0" : "opacity-40 text-gray-400"
-                    }`} />
-                    <Moon className={`h-2.5 w-2.5 sm:h-3 sm:w-3 transition-opacity duration-300 ${
-                      theme === "light" ? "opacity-40 text-blue-600" : "opacity-0"
-                    }`} />
+                    <Sun className={`h-2.5 w-2.5 sm:h-3 sm:w-3 transition-opacity duration-300 ${theme === "light" ? "opacity-0" : "opacity-40 text-gray-400"
+                      }`} />
+                    <Moon className={`h-2.5 w-2.5 sm:h-3 sm:w-3 transition-opacity duration-300 ${theme === "light" ? "opacity-40 text-blue-600" : "opacity-0"
+                      }`} />
                   </div>
-                  
+
                   <span className="sr-only">Toggle theme</span>
                 </button>
               </div>
@@ -160,12 +154,11 @@ export function Header() {
                   <button
                     key={item.href}
                     onClick={() => scrollToSection(item.href)}
-                    className={`text-left px-4 py-3 rounded-lg transition-all duration-200 font-medium transform hover:translate-x-2 ${
-                      isActive
+                    className={`text-left px-4 py-3 rounded-lg transition-all duration-200 font-medium transform hover:translate-x-2 ${isActive
                         ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 shadow-sm border-l-4 border-blue-600"
                         : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20"
-                    }`}
-                    style={{ 
+                      }`}
+                    style={{
                       animationDelay: `${index * 50}ms`,
                       animationFillMode: 'both',
                       animation: `slideInLeft 0.3s ease-out ${index * 50}ms`
